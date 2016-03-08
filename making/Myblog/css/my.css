@@ -1,0 +1,236 @@
+body,div,ul,li,p,hr{margin: 0;padding:0;}
+       a{text-decoration: none;color: black;font-size: 13px;}
+       a:hover{color: blue;}
+       #header{background: #F2F2F2;
+               font-family: "宋体";
+               font-size: 12px;
+               height: 30px;
+               min-width: 950px;
+               overflow: hidden;
+               }
+        .head-main{
+                height: 30px;
+                margin: 0 auto;
+                width: 950px;
+                }
+             
+       .logo{
+             float:left;
+             margin: 0 0;
+             height: 30px;
+             padding: 0px;
+            }
+        .mid{width: 120px;
+       	     height: 20px;
+       	    margin-top:5px;
+             border: 1px solid #ccc;
+       	     }
+       	.head-right{width: 300px;
+                  height: 30px;
+                  float: right;}
+        .one,.tw{width: 100px;
+             height: 30px;
+             line-height: 30px;
+             text-align: center;
+             float: left;}
+        .three,.four{width: 50px;
+             height: 30px;
+             line-height: 30px;
+             text-align: center;
+             float: left;}
+        .head-right a{color: blue;display: block;}
+        .text4 a:hover,.head-right a:hover{background:white;}
+       #content-img{ width: 950px;
+                   height: 300px;
+                   margin: 0px auto;
+                   border-right:#F2F2F2;  
+                   position: relative;
+                   background:rgba(0, 0, 0, 0) url("../img/博客.jpg") repeat scroll 0 0;
+                   }
+       	 .text1 p a{font-family: "黑体";
+               position: absolute;
+               font-size: 30px;
+               top: 110px;
+               left: 100px;
+                }
+         .text2{font-family: "黑体";
+               position: absolute;
+               top: 145px;
+               left: 100px;
+               } 
+         .text1 a:hover,.text2 a:hover,.o a:hover{text-decoration: underline;}
+         .text3{position: absolute;
+                top: 170px;
+                left: 100px;
+                width: 300px;
+                height: 30px;
+                }
+         .o{width: 72px;
+            height: 30px;
+            line-height: 30px;
+            display: block;
+            text-align: center;
+            border-right:1px dotted black;
+            float: left;
+            }
+          .p{width: 120px;
+            height: 30px;
+            line-height: 30px;
+            display: block;
+            text-align: center;
+            border-right:1px dotted black;
+            float: left;}
+          .q{float: right;}
+          .text4{position: absolute;
+                top: 230px;
+                left: 600px;
+                width: 300px;
+                height: 30px;}
+            .text4 span{float: left; 
+                          width: 80px;
+                          height: 30px;
+                          line-height: 30px;
+                          text-align: center;}
+            .text4 a{display: block;}
+       
+        #content{width: 950px;
+                 height: 730px;
+                 margin: 0px auto;
+                 /* border:1px solid red; */
+                 margin-bottom:30px; 
+             }
+        .content-left{width: 210px;
+                      height: 700px;
+                      border:1px solid #ccc;
+                      float: left; }
+                      
+        .content-left1{width: 210px;
+                      height: 500px;
+                      border:1px solid #ccc;
+                     
+                      background: #F0EEEA;}
+        .left1{width: 210px;
+                      height: 20px;
+                      border-bottom: 1px solid #ccc;
+                      background: #ccc;
+                     }
+        .nav{font-size: 13px;
+             float: left;
+             margin-left:10px; 
+             color: #748181;}
+        .nav2{float: right;
+              margin-right:10px; 
+              }
+        .nav2 a{font-size: 13px;
+              color: #748181;}
+        .nav2 a:hover{color: red;}
+        .pho1{margin: 14px;}
+        .pho2{margin:10px 15px;}
+        .left2{width: 80px;
+                      height: 22px;
+                      border-bottom: 1px solid #ccc;
+                      background: #EAEAEA;
+                      margin: 10px auto;
+                     }
+        .ico{margin-left:15px; }
+        .left2 a:hover{color: black;display: block;}
+        .left3{width: 210px;
+                      height: 200px;
+                      margin: 10px ;}
+        .left3 p{color: #748181;
+                 font-size: 13px;
+                 line-height: 20px;}
+        .content-left2{width: 210px;
+                       height: 160px;
+                       margin-top: 20px;
+                       background: #EAEAEA;}
+        .left4{
+           width: 210px;
+           height: 100px;
+            
+           margin-top:10px; 
+
+        }
+        .left4 ul{margin-left:20px; }
+        .left4 ul li a,.left4 ul li{
+             color: #748181;
+                 font-size: 13px;
+                 line-height: 20px; 
+        }
+        .left4 a:hover{color: green;
+                       text-decoration: underline;}
+        /*.left1 p,.left2 p,.left3 p,.number p,.right1 p,.right3 p,.right4 p{height: 30px;
+        	background: #D8E8E2;
+        	line-height: 30px;
+            font-size: 12px;
+            } 
+         .in{width: 100px;margin: 5px;
+             margin-left: 20px;} 
+         
+          
+         .text{width: 200px;height: 60px;border-bottom:1px }
+         .text p{height: 30px;background: white;}
+         .cha{width: 200px;height: 160px;background: url(../img/工作时间.png);}
+         .number{width: 200px; height: 200px;margin-top: 20px;background: white;}*/
+         .content-right{width: 725px;
+                      height: 700px;
+                      border:1px solid #ccc;
+                       float: left;
+                      margin-left: 10px;
+                      background: #F0EEEA;} 
+         .right1{width: 725px;
+                 height: 20px;
+                background:  #ccc; } 
+          .right2{width: 725px;height: 120px;border-bottom: 1px dotted black;}
+          .arc{margin-top: 40px;
+               margin-left: 15px; }
+          .arc span,.arc span a{color: #748181;
+                 font-size: 18px;}
+          .qian{color: #748181;
+                 font-size: 13px;
+                 margin-top: 15px;
+                 margin-left: 15px;}
+          .zhuan{float: right;margin-right: 15px; } 
+          .arc span a:hover{color: blue;
+                            text-decoration: underline;}
+          .arc span a:active{color: pink;}
+          .right3{width: 725px;height: 450px;border-bottom: 1px dotted black;}
+          .pho3{width: 400px;
+                height: 300px;
+                margin: 20px 60px;}
+                  }
+          .right4{width: 725px;height: 30px;margin-top:10px; }
+          .right4 span{font-size: 12px;} 
+         #footer{width: 950px; height: 250px;clear: both;
+                  margin: 0px auto; 
+                   }
+           .one{float: left;}
+           .two{float: right;}
+           .right3 a p,.right4 a p{background: white;}
+           /*.title{width: 578px;*/
+                  /*height: 160px;}*/
+           .img{width: 578px;
+                height: 300px;}
+           
+    #footer p {color:rgba(0, 0, 0, 0.54);
+              font-size: 10px;
+              text-align: center;
+              line-height: 20px;
+              margin-top:0px; }
+              
+    #footer p a{color:rgba(0, 0, 0, 0.54);
+              font-size: 13px;
+              text-align: center;
+              line-height: 20px;
+              margin-top:0px; }
+    #footer p a:hover{color: blue;
+                   text-decoration: underline;}
+
+     
+    .size{font-family: "楷体"; color: blue;}
+    form p{font-family: "楷体"; font-size: 10px;}
+    .type{height: 30px;
+          background: #D8E8E2;
+          line-height: 30px;
+            font-size: 12px;
+            }
