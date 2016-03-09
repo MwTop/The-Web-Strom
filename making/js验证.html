@@ -5,30 +5,30 @@
 		<title>throw 的练习使用</title>
 	</head>
 	<body>
-		<script language="javascript">
+	<script language="javascript">
           function myFunction()
           {
           try
             { 
-				var x=document.getElementById("de").value;
-				if(x=="")    throw "值为空";
-				if(isNaN(x)) throw "不是数字";
-			    if(x>10)     throw "太大";
-				if(x<0)      throw "值为负数，不符合规则";
+		var x=document.getElementById("de").value;
+		if(x=="")    throw "值为空";
+		if(isNaN(x)) throw "不是数字";
+	        if(x>10)     throw "太大";
+		if(x<0)      throw "值为负数，不符合规则";
                 if(x>=0 || x<=10)   alert("输入正确，您输入的数字为:"+ x);
-			}
-			catch(err)
-			{
-				var y=document.getElementById("mess");
-				y.innerHTML="错误：" + err + "。";
-			}
-		   }
-	    </script>
-	    <div align="center">
-		<h3>请输入1到10之间的数字:</h3>
-        <input type="text" id="de">
-        <input type="button" onclick="myFunction()" value="测试输入的值">
-        <p id="mess"></p>
-        </div>
-	</body>
+        	}
+		catch(err)
+		{
+			var y=document.getElementById("mess");
+			y.innerHTML="错误：" + err + "。";
+		}
+         }
+      </script>
+    <div align="center">
+	<h3>请输入1到10之间的数字:</h3>
+	<input type="text" id="de">
+	<input type="button" onclick="myFunction()" value="测试输入的值">
+	<p id="mess"></p>
+   </div>
+</body>
 </html>
