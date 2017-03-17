@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta type="">
+	<title>Umremember passwd</title>
+	<link href="css/input.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/Y-number.js"></script>
+</head>
+<body onload="createCode()">
+	<div class="icon">
+		<p>大数据挖掘</p>
+	</div>
+	<div class="body">
+	   	   <div class="login">
+	   	   	   <span class="le">忘记密码</span><span class="ri"><a href="onload.htm">返回立即登录</a></span>
+	   	   </div>
+	   	   <div class="From">
+		   	  <form action="" name="表单" method="post" id="form">
+		   	  	<div class="UserName">
+				<label for="">
+				   	<input type="text" name="usr" class="Input" id="email" placeholder="请输入注册邮箱" />
+				</label>
+			   </div>
+			   <!-- 错误显示 -->		   	 
+				<div class="check">
+					<label for="">
+						<input type="un-text" name="yzpw" id="inputCode" class="yz" placeholder="请输入验证码"/>
+						<div class="code" id="checkCode" onclick="createCode()" >JequWk</div>
+					    <span class="un-span"><a href="#" onclick="createCode()">换一张</a></span>
+					</label>
+				</div>
+				<input type="submit"  name="Submit" value="提交"  onclick="validateCode();" class="OnL"/>
+				<p class="un-text">通过注册邮箱重设密码</p>
+			</form>
+	   	   </div>
+	  </div>
+</body>
+</html>

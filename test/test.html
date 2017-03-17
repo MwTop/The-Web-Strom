@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="/js/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $.post("exmple.php",
+    {
+      name:"Donald Duck",
+      city:"Duckburg",
+    },
+    function(data,status){
+      alert("数据：" + data + "\n状态：" + status);
+     var obj= eval("("+ data+")"); 
+      var obj= JSON.parse(data);
+      console.log(obj);
+      var usr=obj.fname;
+        console.log(usr);
+      var city=obj.city;
+      var txt="<div class='comment'><p>Hello,I'm "+ usr+"</p><h2>I'm living in "+ city +"!</h2></div>";
+      $("#resText").html(data);
+      $(".c").html(txt);
+    });
+      //将返回的数据添加到页面上
+  });
+});
+</script>
+</head>
+<body>
+<div id="resText"></div>
+<div class="c"></div>
+<button>向页面发送 HTTP POST 请求，并获得返回的结果</button><br>
+</body>
+</html>

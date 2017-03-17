@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<title>在线演示</title>
+		<link rel="stylesheet" type="text/css" href="css/index-style.css" />
+        <link rel="stylesheet" type="text/css" href="css/animate.css" />
+        <link rel="stylesheet" href="css/myJiaodian.css" type="text/css">
+        <link rel="stylesheet" href="css/online-style.css" type="text/css" />
+        <script type="text/javascript" src="js/lunbo.js"></script>
+        <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ 
+	window.scrollTo(0,1); } </script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+<link rel="stylesheet" href="css/swipebox.css">
+			<script src="js/swipebox.min.js"></script> 
+			    <script type="text/javascript">
+					jQuery(function($) {
+						$(".swipebox").swipebox();
+					});
+				</script>
+<script src="js/wow.min.js"></script>
+
+<script>
+	new WOW().init();
+</script>
+	</head>
+	<body>
+		<!-- 导航显示  -->
+	<div id="topdiv">
+		<div id="top-menu">
+			<ul>
+				<li><a href="index.html">主页</a></li>
+				<li><a href="introduce1.html">实验室介绍</a>
+				</li>
+				<li><a href="action-online.html" class="active">研究成果</a>
+					<ul>
+						<li><a href="#goto2" id="ON1">学术论文</a></li>
+						<li><a href="#goto1" id="ON2">在线演示</a></li>
+					</ul>
+				</li>
+				<li><a href="resource.html">资源共享</a>
+				
+				</li>
+				<li><a href="discuss.html">交流专区</a></li>
+				<li><a href="join.html">加入我们</a></li>
+			</ul>
+		</div>
+		<div class="search">
+			<form>
+				<input type="text" value="Search.." onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}" >
+				<input type="submit" value="">
+			</form>
+		</div>
+		<div class="loading">
+			<ul>
+				<li><a href="javasrcript:;" id="load2">注册</a></li>
+				<li><a href="javasrcript:;" id="load1">登陆</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 在线轮播图的演示 -->
+	<div id="content">
+			<div id="list" style="left:-1350px;">
+			     <img src="img/picture4.jpg" alt="photo5" id="Img">  
+				 <img src="img/picture1.jpg" alt="photo1">
+				 <img src="img/picture2.jpg" alt="photo2">
+			     <img src="img/picture3.jpg" alt="photo3">
+			     <img src="img/picture4.jpg" alt="photo4">
+			     <img src="img/picture1.jpg" alt="photo1">
+			</div>
+			<div id="buttons">
+				<span index="1" class="on"></span>
+				<span index="2"></span>
+			    <span index="3"></span>
+			    <span index="4"></span>    
+			</div>
+			<a href="javascript:;" id="prev" class="arrow">&lt;</a>
+			<a href="javascript:;" id="next" class="arrow">&gt;</a>
+	</div> 
+		
+		<a name=goto1><div class="action" id="act"></a>
+			<div class="ac-list wow bounceIn animated animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+				<h2>在线演示</h2>
+				<ul>
+					<li>
+						<a href="">
+							<img src="img/ph1.jpg"></span>
+                        <p>新手简单入门</p>
+                        <div class="icon">
+                        	<img src="img/clock.jpg"><span>总共30分钟</span>
+                        	<span class="i"><img src="img/jiaobiao.jpg"></span>
+                        </div></a>
+					</li>
+					<li>
+						<a href=""><img src="img/ph2.jpg" alt="新手学习">
+                        <p>数据结构与算法</p>
+                        <div class="icon">
+                        	<img src="img/clock.jpg"><span>总共45分钟</span>
+                        	<span class="i"><img src="img/jiaobiao.jpg"></span>
+                        </div></a>
+					</li>
+					<li>
+						<a href=""><img src="img/ph3.jpg" alt="新手学习">
+                        <p>Python教程学习</p>
+                        <div class="icon">
+                        	<img src="img/clock.jpg"><span>总共65分钟</span>
+                        	<span class="i"><img src="img/jiaobiao.jpg"></span>
+                        </div></a>
+					</li>
+					<li>
+						<a href=""><img src="img/ph4.jpg" alt="新手学习">
+                        <p>新手简单入门</p></a>
+                        <div class="icon">
+                        	<img src="img/clock.jpg"><span>总共30分钟</span>
+                        	<span class="i"><img src="img/android.jpg"></span>
+                        </div>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href=""><img src="img/ph3.jpg" alt="新手学习">
+                        <p>练习</p></a>
+                        <div class="icon">
+                        	<img src="img/clock.jpg"><span>总共50分钟</span>
+                        	<span class="i"><img src="img/jiaobiao.jpg"></span>
+                        </div>
+					</li>
+					<li>
+						<a href=""><img src="img/ph4.jpg" alt="新手学习">
+                        <p>练习</p></a>
+                        <div class="icon">
+                        	<img src="img/clock.jpg"><span>总共45分钟</span>
+                        	<span class="i"><img src="img/jiaobiao.jpg"></span>
+                        </div>
+					</li>
+					<li>
+						<a href=""><img src="img/ph1.jpg" alt="新手学习">
+                        <p>练习</p>
+                        <div class="icon">
+                        	<img src="img/clock.jpg"><span>总共30分钟</span>
+                        	<span class="i"><img src="img/jiaobiao.jpg"></span>
+                        </div></a>
+					</li>
+					<li>
+						<a href=""><img src="img/ph2.jpg" alt="新手学习">
+                        <p>新手简单入门</p></a>
+                        <div class="icon">
+                        	<img src="img/clock.jpg"><span>总共30分钟</span>
+                        	<span class="i"><img src="img/jiaobiao.jpg"></span>
+                        </div>
+					</li>
+				</ul>
+			</div>
+		</div>                   
+		<a name=goto2>
+		 <div class="article" id="art"></a><!-- 整个大框-->
+			 <div class="art-box wow flipInY animated animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;"> <!-- 小框-->
+				<h3>学术论文</h3>
+				 <div id="nav">
+				 	<div class="nav-nei">
+				 	<h4>开放学术资源</h4><hr style="margin-top:5px;"/>
+				 	<p><a href="javascript:;" >开放获取期刊</a></p>
+				 	<p><a href="javascript:;" >Number1</a></p>
+				 	<p><a href="javascript:;" >在ubuntu下</a></p>
+				 	<p><a href="javascript:;" >开放获取期刊</a></p>
+				    </div>
+				 </div>
+				 <div class="cont">
+				 	<div class="cont-nei">
+					 	<h2>开放获取期刊</h2>
+					 	<p>Muse项目提供将近200种优质期刊标题，这些期刊来自30个学术出版商,涉及文学、评论、历史、视觉和表演艺术、文化研究、教育、政治科学、性别研究、经济学等方面</p>
+					 	<p>Muse项目提供将近200种优质期刊标题，这些期刊来自30个学术出版商,涉及文学、评论、历史、视觉和表演艺术、文化研究、教育、政治科学、性别研究、经济学等方面</p>
+					 	<p>Muse项目提供将近200种优质期刊标题，这些期刊来自30个学术出版商,涉及文学、评论、历史、视觉和表演艺术、文化研究、教育、政治科学、性别研究、经济学等方面</p>
+					 	<p>Muse项目提供将近200种优质期刊标题，这些期刊来自30个学术出版商,涉及文学、评论、历史、视觉和表演艺术、文化研究、教育、政治科学、性别研究、经济学等方面</p>
+					 	<p>Muse项目提供将近200种优质期刊标题，这些期刊来自30个学术出版商,涉及文学、评论、历史、视觉和表演艺术、文化研究、教育、政治科学、性别研究、经济学等方面</p>
+				    </div>
+				 </div>
+
+				 <div class="cont" style="display:none;">
+				 	<div class="cont-nei">
+					 	<h2>NUMber1</h2>
+					 	<p>Muse项目提供将近200种优质期刊标题，这些期刊来自30个学术出版商,涉及文学、评论、历史、视觉和表演艺术、文化研究、教育、政治科学、性别研究、经济学等方面</p>
+					 	<p>Muse项目提供将近200种优质期刊标题，这些期刊来自30个学术出版商,涉及文学、评论、历史、视觉和表演艺术、文化研究、教育、政治科学、性别研究、经济学等方面</p>
+					 	<p>Muse项目提供将近200种优质期刊标题，这些期刊来自30个学术出版商,涉及文学、评论、历史、视觉和表演艺术、文化研究、教育、政治科学、性别研究、经济学等方面</p>
+					 	<p>Muse项目提供将近200种优质期刊标题，这些期刊来自30个学术出版商,涉及文学、评论、历史、视觉和表演艺术、文化研究、教育、政治科学、性别研究、经济学等方面</p>
+					 	<p>Muse项目提供将近200种优质期刊标题，这些期刊来自30个学术出版商,涉及文学、评论、历史、视觉和表演艺术、文化研究、教育、政治科学、性别研究、经济学等方面</p>
+				    </div>
+				 </div>
+
+				  <div class="cont" style="display:none;">
+				 	<div class="cont-nei">
+					 	<h2>在ubuntu下，关闭笔记本盖子之后</h2>
+					 	<p>PDF下载阅读中，如何复制，粘贴，编辑PDF文档内容？ 使用foxit4.1可以选择 PDF 文档中的文本、表、图像和图形，将其复制到剪贴板，或将其粘贴到其它应用程序中 ..</p>
+					 	<p>Muse项目提供将近200种优质期刊标题，这些期刊来自30个学术出版商,涉及文学、评论、历史、视觉和表演艺术、文化研究、教育、政治科学、性别研究、经济学等方面</p>
+					 	<p>Muse项目提供将近200种优质期刊标题，这些期刊来自30个学术出版商,涉及文学、评论、历史、视觉和表演艺术、文化研究、教育、政治科学、性别研究、经济学等方面</p>
+					 	<p>Muse项目提供将近200种优质期刊标题，这些期刊来自30个学术出版商,涉及文学、评论、历史、视觉和表演艺术、文化研究、教育、政治科学、性别研究、经济学等方面</p>
+					 	<p>Muse项目提供将近200种优质期刊标题，这些期刊来自30个学术出版商,涉及文学、评论、历史、视觉和表演艺术、文化研究、教育、政治科学、性别研究、经济学等方面</p>
+				    </div>
+				 </div>
+
+				  <div class="cont" style="display:none;">
+				 	<div class="cont-nei">
+					 	<h2>在ubuntu下</h2>
+					 	<p>Muse项目提供将近200种优质期刊标题，这些期刊来自30个学术出版商,涉及文学、评论、历史、视觉和表演艺术、文化研究、教育、政治科学、性别研究、经济学等方面</p>
+					 	<p>PDF下载阅读中，如何复制，粘贴，编辑PDF文档内容？ 使用foxit4.1可以选择 PDF 文档中的文本、表、图像和图形，将其复制到剪贴板，或将其粘贴到其它应用程序中 ..</p>
+					 	<p>Muse项目提供将近200种优质期刊标题，这些期刊来自30个学术出版商,涉及文学、评论、历史、视觉和表演艺术、文化研究、教育、政治科学、性别研究、经济学等方面</p>
+					 	<p>Muse项目提供将近200种优质期刊标题，这些期刊来自30个学术出版商,涉及文学、评论、历史、视觉和表演艺术、文化研究、教育、政治科学、性别研究、经济学等方面</p>
+					 	<p>Muse项目提供将近200种优质期刊标题，这些期刊来自30个学术出版商,涉及文学、评论、历史、视觉和表演艺术、文化研究、教育、政治科学、性别研究、经济学等方面</p>
+				    </div>
+				 </div>
+			</div> 
+		</div>
+		<!-- 底部显示 -->
+	<div class="container">
+            <div class="footer-top wow bounceInLeft animated animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                    <ul>
+                       <li><a href="#"><img src="img/icon1.png" alt=""/></a></li>
+                        <li><a href="#"><img src="img/icon2.png" alt=""/></a></li>
+                        <li><a href="#"><img src="img/icon3.png" alt=""/></a></li>
+                        <li><a href="#"><img src="img/icon4.png" alt=""/></a></li>
+                    </ul>
+            </div>
+                <div class="bottom-menu wow bounceInLeft animated animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                    <ul>
+		                <li><a href="index.html">主页</a>&nbsp;&nbsp;</li>
+					    <li><a href="introduce1.html">实验室介绍</a>&nbsp;&nbsp;</li>
+					  	<li><a href="action-online.html">研究成果</a>&nbsp;&nbsp;</li>
+						<li><a href="resource.html">资源共享</a>&nbsp;&nbsp;</li>
+					   	<li><a href="discuss.html">交流专区</a>&nbsp;&nbsp;</li>
+					   	<li><a href="join.html">加入我们</a>&nbsp;&nbsp;</li>
+                    </ul>
+                </div>
+           <div class="buttom-wen wow fadeInDown animated animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+         		<p>Copyright © 2016 imooc.com All Rights Reserved | 京ICP备 13046642号-2</p>
+     		</div>
+     	  </div>
+     	   <script type="text/javascript">
+     	     var t=document.getElementsByClassName('cont');
+     	     // alert(t.length);
+     	     var b=document.getElementById('nav').getElementsByTagName('a');
+             // alert(b.length);
+             // alert(b[3].innerHTML);
+     	     for (var i = 0; i < t.length; i++) {
+                b[i].index = i;
+     	        b[i].onclick=function(){
+
+     	        	for (var j = 0; j < t.length; j++) {
+              	 		t[j].style.display="none";
+              	 		b[j].style.color="black";
+              	 	};
+              	   t[this.index].style.display="block";
+                   b[this.index].style.color="red";
+     	        }
+     	     };
+          </script>
+	</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="" />
+	<title>标题</title>
+	<link rel="stylesheet" type="text/css" href="css/animate.css" />
+	<link rel="stylesheet" type="text/css" href="css/index-style.css" />
+    <link rel="stylesheet" type="text/css" href="css/news.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $(window).load(function(){
+              $.get("content.txt",function(data,status){
+                  var contobj = eval("("+ data +")");             
+                  var url=window.location.href;
+                   var i=url.split("=")[1]; 
+                                 
+                   $("#title").html(contobj.title[i]);
+                    $("title").text(contobj.title[i]);
+                   $(".vsb p").eq(0).html(contobj.message[i]);
+
+                   $("#ren").html(contobj.author[i]);
+                   $("#y").text(contobj.time[i]);
+                    
+                   if(i==0)
+                    $(".pro").hide();
+                   if(i==(contobj.title.length-1))
+                    $(".next").hide();
+
+                  $("#pro").html(contobj.title[i-1]);
+        
+                  $("#next").html(contobj.title[parseInt(i)+1]);
+
+                  $("#pro").attr("href","news.html?t="+(i-1));
+                  $("#next").attr("href","news.html?t="+(parseInt(i)+1));
+
+            });
+        });
+      });
+    </script>
+    <script type="text/javascript">
+     window.onload=function(){
+     	// var Title=document.getElementById("title").innerHTML;
+      //  // document.getElementById("T").innerHTML = Title;
+      //  document.getElementsByTagName("title")[0].innerHTML = Title;
+
+       if (sessionStorage.pagecount)
+        {
+        sessionStorage.pagecount=Number(sessionStorage.pagecount) +1;
+        }
+      else
+        {
+        sessionStorage.pagecount=1;
+        }
+            document.getElementById("num").innerHTML=sessionStorage.pagecount;
+      }
+    </script>
+</head>
+<body>
+	 <!-- nav -->
+	<div id="topdiv">
+		<div id="top-menu">
+			<ul>
+				<li><a href="index.html" class="active">主页</a></li>
+				<li><a href="introduce1.html" >实验室介绍</a>
+				</li>
+				<li><a href="action-online.html">研究成果</a>
+					<ul>
+						<li><a href="javascript:;">学术论文</a></li>
+						<li><a href="javascript:;">在线演示</a></li>
+					</ul>
+				</li>
+				<li><a href="resource.html">资源共享</a>
+				
+				</li>
+				<li><a href="discuss.html">交流专区</a></li>
+				<li><a href="join.html">加入我们</a></li>
+			</ul>
+		</div>
+		<div class="search">
+			<form>
+				<input type="text" value="Search.." onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}" >
+				<input type="submit" value="">
+			</form>
+		</div>
+		<div class="loading">
+			<ul>
+				<li><a href="register.html" id="load2">注册</a></li>
+				<li><a href="javasrcript:void(0);" id="load1">登录</a></li>
+			</ul>
+		</div>
+	</div>
+
+    <div class="main">
+    	<div id="news-main">
+    	    <div class="one" >
+               <p class="big"><strong>通知公告</strong></p>
+               <p class="small"><a href="index.html">首页</a>>通知公告</p>
+                <div><hr style="width:100%;"></div>
+            </div>
+            <div class="title">
+            	<h3 id="title">学校开展依法治校 积极推进“一章八制”专项工作</h3><br>
+            	<p id="time">时间：2016-7-13 14:23   浏览次数：<span id="num"></span></p><br>
+              <!-- <p></p> -->
+            </div>
+            <div class="vsb">
+            	<!-- <p>按照中央、省委和省委高教工委关于“两学一做”学习教育精神，为扎实推进学校“两学一做”学习教育，突出“持续性”、“经常性”、“针对性”、“层次性”和“实效性”，经研究，决定在前阶段学习教育的基础上，充分利用暑假继续抓好抓实学习教育，现就有关事项通知如下：</p>
+            	<p>1. 增强思想和行动自觉，学习教育永远在路上。中央、省委和省委高教工委明确指出，“两学一做”学习教育不是一次活动，要突出正常教育，没有时间限制，没有时段差别，只有开始没有结束，只有进行时没有完成时，学习教育永远在路上，要真正把思想政治建设抓在日常、严在经常。全校各级党组织和全体党员，要在前阶段边工作边学习教育的基础上，充分利用暑假，静下心来、集中精力，认真学习、深入思考，持续增强学习教育的思想和行动自觉，做到学习教育暑假期间不松劲、不懈怠、不间断。</p>
+            	<p>2. 明确暑期学习重点，加强学习教育针对性。全体党员，在完成原有学习教育计划的基础上，暑假期间重点学习习近平总书记在庆祝中国共产党成立95周年大会上的重要讲话精神，学习习近平总书记关于教育重要讲话文章选编辅导读本（学校“两学一做”学习教育领导小组办公室与高教研究所编印），切实把思想和行动统一到讲话精神上来。处级以上领导干部还要学习省委建立的干部鼓励激励、容错纠错、能上能下三项机制的文件精神，增强干部队伍活力和创造力，激励干部主动担当、积极作为。学生党员要做到“五个一”，要学习习近平总书记在庆祝中国共产党成立95周年大会上的重要讲话一篇，学习习近平总书记关于教育重要讲话文章选编辅导读本一本，阅读红色经典书籍一部，结合实际在居住地社区、街道、村等党支部调研或讲党课一次（有条件的学生党员可到附近的爱国主义教育基地接受革命传统教育），撰写不少于2000字的心得体会一篇，9月9日前交所在党支部，以学院党委（党总支）为单位报学校“两学一做”学习教育领导小组办公室。</p> -->
+                	<p></p>
+            	<!-- <p style="text-align:right"><span>西安邮电大学</span></p>-->
+            	<p style="text-align:right"><span id="ren"></span></p>
+            	<p style="text-align:right"><span id="y"></span></p> 
+            </div>
+    	 <div><hr style="width:100%;"></div>
+    	<div class="pro">上一条：<a href="" id="pro">唐朝的衰败，于她的美</a></div><br>
+    	<div class="next">下一条：<a href="" id="next">归结</a></div>
+    </div>
+    </div>
+    <!-- footer -->
+	<div class="container">
+            <div class="footer-top wow bounceInLeft animated animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                    <ul>
+                        <li><a href="#"><img src="img/icon1.png" alt=""/></a></li>
+                        <li><a href="#"><img src="img/icon2.png" alt=""/></a></li>
+                        <li><a href="#"><img src="img/icon3.png" alt=""/></a></li>
+                        <li><a href="#"><img src="img/icon4.png" alt=""/></a></li>
+                    </ul>
+            </div>
+                <div class="bottom-menu wow bounceInLeft animated animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                    <ul>
+		                <li><a href="index.html">主页</a>&nbsp;&nbsp;</li>
+					    <li><a href="introduce1.html">实验室介绍</a>&nbsp;&nbsp;</li>
+					  	<li><a href="action-online.html">研究成果</a>&nbsp;&nbsp;</li>
+						<li><a href="resource.html">资源共享</a>&nbsp;&nbsp;</li>
+					   	<li><a href="discuss.html">交流专区</a>&nbsp;&nbsp;</li>
+					   	<li><a href="join.html">加入我们</a>&nbsp;&nbsp;</li>
+                    </ul>
+                </div>
+           <div class="buttom-wen wow fadeInDown animated animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+         		<p>Copyright © 2016 imooc.com All Rights Reserved | 京ICP备 13046642号-2</p>
+     		</div>
+	</div>
+</body>
+</html>

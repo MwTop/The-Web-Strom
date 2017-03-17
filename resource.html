@@ -1,0 +1,679 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> resource</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/animate.css" />
+<link rel="stylesheet" type="text/css" href="css/resource.css" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript">
+ addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+ </script>
+ <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+			<script src="js/swipebox.min.js"></script> 
+			    <script type="text/javascript">
+					jQuery(function($) {
+						$(".swipebox").swipebox();
+					});
+				</script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.min.js"> </script>
+<script>
+	new WOW().init();
+</script>
+<script type="text/javascript">
+window.onload=function(){
+			var oUi=document.getElementById('share');//获取ul
+            var oli=oUi.getElementsByTagName('li');//获取ul下的li
+            var odiv=document.getElementById('trends') ;//获取div
+            for(i=0;i<=oli.length;i++)
+            {
+                 oli[i].index = i; 
+            //btn[i]是指定button的第i个按钮;为该按钮添加一个index属性，并将index的值设置为i
+                 oli[i].onclick=function()//按钮的第i个点击事件
+                {
+                for(i=0;i<oli.length;i++)//循环去掉样式，把div隐藏
+                 { 
+                   oli[i].className=''; //清空按钮的样式
+                   odiv[i].style.display='none';//隐藏div
+                  }
+                    odiv[this.index].style.display='block';//this.index是当前div 
+                };
+ 
+            };
+}
+			
+</script>
+<body>
+	<div id="topdiv">
+		<div id="top-menu">
+			<ul>
+				<li><a href="index.html" >主页</a></li>
+				<li><a href="introduce1.html" >实验室介绍</a>
+				</li>
+				<li><a href="action-online.html" >研究成果</a>
+					<ul>
+						<li><a href="javascript:;">学术论文</a></li>
+						<li><a href="javascript:;">在线演示</a></li>
+					</ul>
+				</li>
+				<li><a href="resource.html" class="active1">资源共享</a>
+				</li>
+				<li><a href="discuss.html" >交流专区</a></li>
+				<li><a href="join.html" >加入我们</a></li>
+			</ul>
+		</div>
+		<div class="search">
+			<form>
+				<input type="text" value="Search.." onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}" >
+				<input type="submit" value="">
+			</form>
+		</div>
+		<div class="loading">
+			<ul>
+				<li><a href="#" id="load2">注册</a></li>
+				<li><a href="#" id="load1">登陆</a></li>
+			</ul>
+		</div>
+	</div>
+		<div class="conton">
+		<div class="img-port wow bounceIn animated" data-wow-delay="1s" style="visibility: visible; -webkit-animation-delay: 1s;">
+			<a href="#"><img src="img/logo.png" art=""/></a>
+		</div>
+		</div>
+		 <span class="menu"></span>
+		 <!-- 导航条的主框 -->
+		<div class="content">
+			<div class="navbar" id="navbar">
+				 <a class="menu" href="#"><i class="icon-align-justify"></i></a>
+				 <ul id="share">
+					 <li>
+						 <a class="link hme" href="#">
+							<span class="active"><span class="valign"><span class="vertical">开源代码</span></span></span>
+							<span class="hover"><span class="valign"><span class="vertical">开源代码</span></span></span>
+						  </a>
+					  </li>
+					  <li>
+						  <a class="link abt" href="#">
+							<span class="active"><span class="valign"><span class="vertical">书籍下载</span></span></span>
+							<span class="hover"><span class="valign"><span class="vertical">书籍下载</span></span></span>
+						  </a>
+					  </li>
+					  <li>
+						 <a class="link tdz" href="#">
+							<span class="active"><span class="valign"><span class="vertical">数据下载</span></span></span>
+							<span class="hover"><span class="valign"><span class="vertical">数据下载</span></span></span>
+						  </a>
+					  </li>
+					  <li>
+						  <a class="link" href="#">
+							<span class="active"><span class="valign"><span class="vertical">知识推荐</span></span></span>
+							<span class="hover"><span class="valign"><span class="vertical">知识推荐</span></span></span>
+						  </a>
+					  </li>
+					  <li>
+						   <a class="link con" href="#">
+							<span class="active"><span class="valign"><span class="vertical">程序下载</span></span></span>
+							<span class="hover"><span class="valign"><span class="vertical">程序下载</span></span></span>
+						  </a>
+					  </li>
+				 </ul>
+				
+
+
+				
+			</div>
+			<!-- script for menu -->
+				<script>
+				$( "span.menu" ).click(function() {
+				  $( ".navbar" ).slideToggle( "slow", function() {
+				    // Animation complete.
+				  });
+				});
+			</script>
+
+			<div class="center-port" id="center-port">
+
+				<div class="top-wen">
+					<div class="wen-port">
+						<h2>资源共享区</h2>
+						<p>所谓资源共享就是说你电脑里的资源可以被别人使用，同时你也可以使用别人的资源。好处是这样可以加强资源流通，你可以用到更多的资源；坏处就是别人可能会看到你不想分享给别人的资源（相对性的秘密），另外，一些黑客可能会利用资源共享来入侵你的电脑（可能性很小），再就是为病毒 的传播提供了途径，你下载别人的资源 的时候可能会同时下载了病毒。所以设置资源共享应该在可以信任的安全环境里，通常是比较熟悉的局域网内。</p>
+					</div>
+				</div>
+				<div class="center-ka" >
+					<div class="center-wen" id="ka">
+						<div class="one-port port1">
+							<div class="trends" id="trends">
+						    <div class="second-head">
+								<h3>开源代码</h3>
+								<p>以加强资源流通，你可以用到更多的资源；坏处就是别人可能会看到你不想分享给别人的资源（相对性的秘密），另外，一些黑客可能会利用资源共享来入侵你的电脑（可能性很小）。另外，一些黑客可能会利用资源共享来入侵你的电脑（可能性很小）。</p>
+							</div>
+							<div class="grid">
+									<figure class="effect-terry">
+										<div class="wenzi">
+											<p>
+												nvnruhgieuthjrtbierb
+											</p>
+										</div>
+										<figcaption>
+											<h3>动态规划<span>代码</span></h3>
+											<p>
+												<a href="#"><i class="download"></i></a>
+												<a href="#"><i class="heart"></i></a>
+											
+											</p>
+										</figcaption>			
+									</figure>
+									<figure class="effect-terry">
+										<div class="wenzi">
+											<p>
+												nvnruhgieuthjrtbierb
+											</p>
+										</div>
+										<figcaption>
+											<h3>分治算法<span>代码</span></h3>
+											<p>
+												<a href="#"><i class="download"></i></a>
+												<a href="#"><i class="heart"></i></a>
+												>
+											</p>
+										</figcaption>			
+									</figure>
+
+									<figure class="effect-terry">
+										<div class="wenzi">
+											<p>
+												nvnruhgieuthjrtbierb
+											</p>
+										</div>
+										<figcaption>
+											<h3>快速排序 <span>代码</span></h3>
+											<p>
+												<a href="#"><i class="download"></i></a>
+												<a href="#"><i class="heart"></i></a>
+											
+											</p>
+										</figcaption>			
+									</figure>
+									<figure class="effect-terry">
+										<div class="wenzi">
+											<p>
+												nvnruhgieuthjrtbierb
+											</p>
+										</div>
+										<figcaption>
+											<h3>堆排序<span>代码</span></h3>
+											<p>
+												<a href="#"><i class="download"></i></a>
+												<a href="#"><i class="heart"></i></a>
+												
+											</p>
+										</figcaption>			
+									</figure>
+									<figure class="effect-terry">
+										<div class="wenzi">
+											<p>
+												nvnruhgieuthjrtbierb
+											</p>
+										</div>
+										<figcaption>
+											<h3>冒泡排序<span>代码</span></h3>
+											<p>
+												<a href="#"><i class="download"></i></a>
+												<a href="#"><i class="heart"></i></a>
+											
+											</p>
+										</figcaption>			
+									</figure>
+									<figure class="effect-terry">
+										<div class="wenzi">
+											<p>
+												nvnruhgieuthjrtbierb
+											</p>
+										</div>
+										<figcaption>
+											<h3>冒泡排序<span>代码</span></h3>
+											<p>
+												<a href="#"><i class="download"></i></a>
+												<a href="#"><i class="heart"></i></a>
+											</p>
+										</figcaption>			
+									</figure>
+
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+
+
+						<div class="one-port port2">
+							<div class="trends">
+						    <div class="second-head">
+								<h3>书籍下载</h3>
+								<p>以加强资源流通，你可以用到更多的资源；坏处就是别人可能会看到你不想分享给别人的资源（相对性的秘密），另外，一些黑客可能会利用资源共享来入侵你的电脑（可能性很小）。另外，一些黑客可能会利用资源共享来入侵你的电脑（可能性很小）。</p>
+							</div>
+							<div class="grid">
+									<figure class="effect-terry">
+										<img src="img/t1.jpg" alt="img26"/>
+										<figcaption>
+											<h3>c语言基础<span>书本</span></h3>
+											<p>
+												<a href="#"><i class="download"></i></a>
+												<a href="#"><i class="heart"></i></a>
+											
+											</p>
+										</figcaption>			
+									</figure>
+									<figure class="effect-terry">
+										<img src="img/t2.jpg" alt="img26"/>
+										<figcaption>
+											<h3>数据结构<span>书本</span></h3>
+											<p>
+												<a href="#"><i class="download"></i></a>
+												<a href="#"><i class="heart"></i></a>
+												>
+											</p>
+										</figcaption>			
+									</figure>
+
+									<figure class="effect-terry">
+										<img src="img/t3.jpg" alt="img26"/>
+										<figcaption>
+											<h3>算法设计<span>书本</span></h3>
+											<p>
+												<a href="#"><i class="download"></i></a>
+												<a href="#"><i class="heart"></i></a>
+											
+											</p>
+										</figcaption>			
+									</figure>
+									<figure class="effect-terry">
+										<img src="img/t4.jpg" alt="img26"/>
+										<figcaption>
+											<h3>java基础<span>书本</span></h3>
+											<p>
+												<a href="#"><i class="download"></i></a>
+												<a href="#"><i class="heart"></i></a>
+												
+											</p>
+										</figcaption>			
+									</figure>
+									<figure class="effect-terry">
+									<img src="img/t5.jpg" alt="img26"/>
+										<figcaption>
+											<h3>数据基础<span>书本</span></h3>
+											<p>
+												<a href="#"><i class="download"></i></a>
+												<a href="#"><i class="heart"></i></a>
+											
+											</p>
+										</figcaption>			
+									</figure>
+									<figure class="effect-terry">
+										<img src="img/t6.jpg" alt="img26"/>
+										<figcaption>
+											<h3>c++基础<span>书本</span></h3>
+											<p>
+												<a href="#"><i class="download"></i></a>
+												<a href="#"><i class="heart"></i></a>
+											</p>
+										</figcaption>			
+									</figure>
+
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+
+
+						<div class="one-port port3">
+							<div class="trends">
+						    <div class="second-head">
+								<h3>数据下载</h3>
+								<p>以加强资源流通，你可以用到更多的资源；坏处就是别人可能会看到你不想分享给别人的资源（相对性的秘密），另外，一些黑客可能会利用资源共享来入侵你的电脑（可能性很小）。另外，一些黑客可能会利用资源共享来入侵你的电脑（可能性很小）。</p>
+							</div>
+							<div class="grid">
+									<figure class="effect-terry">
+										<div class="wenzi">
+											<p>
+												nvnruhgieuthjrtbierb
+											</p>
+										</div>
+										<figcaption>
+											<h3>动态规划<span>代码</span></h3>
+											<p>
+												<a href="#"><i class="download"></i></a>
+												<a href="#"><i class="heart"></i></a>
+											
+											</p>
+										</figcaption>			
+									</figure>
+									<figure class="effect-terry">
+										<div class="wenzi">
+											<p>
+												nvnruhgieuthjrtbierb
+											</p>
+										</div>
+										<figcaption>
+											<h3>分治算法<span>代码</span></h3>
+											<p>
+												<a href="#"><i class="download"></i></a>
+												<a href="#"><i class="heart"></i></a>
+												>
+											</p>
+										</figcaption>			
+									</figure>
+
+									<figure class="effect-terry">
+										<div class="wenzi">
+											<p>
+												nvnruhgieuthjrtbierb
+											</p>
+										</div>
+										<figcaption>
+											<h3>快速排序 <span>代码</span></h3>
+											<p>
+												<a href="#"><i class="download"></i></a>
+												<a href="#"><i class="heart"></i></a>
+											
+											</p>
+										</figcaption>			
+									</figure>
+									<figure class="effect-terry">
+										<div class="wenzi">
+											<p>
+												nvnruhgieuthjrtbierb
+											</p>
+										</div>
+										<figcaption>
+											<h3>堆排序<span>代码</span></h3>
+											<p>
+												<a href="#"><i class="download"></i></a>
+												<a href="#"><i class="heart"></i></a>
+												
+											</p>
+										</figcaption>			
+									</figure>
+									<figure class="effect-terry">
+										<div class="wenzi">
+											<p>
+												nvnruhgieuthjrtbierb
+											</p>
+										</div>
+										<figcaption>
+											<h3>冒泡排序<span>代码</span></h3>
+											<p>
+												<a href="#"><i class="download"></i></a>
+												<a href="#"><i class="heart"></i></a>
+											
+											</p>
+										</figcaption>			
+									</figure>
+									<figure class="effect-terry">
+										<div class="wenzi">
+											<p>
+												nvnruhgieuthjrtbierb
+											</p>
+										</div>
+										<figcaption>
+											<h3>冒泡排序<span>代码</span></h3>
+											<p>
+												<a href="#"><i class="download"></i></a>
+												<a href="#"><i class="heart"></i></a>
+											</p>
+										</figcaption>			
+									</figure>
+
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<div class="one-port port4">
+							<div class="trends">
+						    <div class="second-head">
+								<h3>知识推荐</h3>
+								<p>以加强资源流通，你可以用到更多的资源；坏处就是别人可能会看到你不想分享给别人的资源（相对性的秘密），另外，一些黑客可能会利用资源共享来入侵你的电脑（可能性很小）。另外，一些黑客可能会利用资源共享来入侵你的电脑（可能性很小）。</p>
+							</div>
+							<div class="grid">
+									<figure class="effect-terry">
+										<div class="wenzi">
+											<p>
+												nvnruhgieuthjrtbierb
+											</p>
+										</div>
+										<figcaption>
+											<h3>动态规划<span>代码</span></h3>
+											<p>
+												<a href="#"><i class="download"></i></a>
+												<a href="#"><i class="heart"></i></a>
+											
+											</p>
+										</figcaption>			
+									</figure>
+									<figure class="effect-terry">
+										<div class="wenzi">
+											<p>
+												nvnruhgieuthjrtbierb
+											</p>
+										</div>
+										<figcaption>
+											<h3>分治算法<span>代码</span></h3>
+											<p>
+												<a href="#"><i class="download"></i></a>
+												<a href="#"><i class="heart"></i></a>
+												>
+											</p>
+										</figcaption>			
+									</figure>
+
+									<figure class="effect-terry">
+										<div class="wenzi">
+											<p>
+												nvnruhgieuthjrtbierb
+											</p>
+										</div>
+										<figcaption>
+											<h3>快速排序 <span>代码</span></h3>
+											<p>
+												<a href="#"><i class="download"></i></a>
+												<a href="#"><i class="heart"></i></a>
+											
+											</p>
+										</figcaption>			
+									</figure>
+									<figure class="effect-terry">
+										<div class="wenzi">
+											<p>
+												nvnruhgieuthjrtbierb
+											</p>
+										</div>
+										<figcaption>
+											<h3>堆排序<span>代码</span></h3>
+											<p>
+												<a href="#"><i class="download"></i></a>
+												<a href="#"><i class="heart"></i></a>
+												
+											</p>
+										</figcaption>			
+									</figure>
+									<figure class="effect-terry">
+										<div class="wenzi">
+											<p>
+												nvnruhgieuthjrtbierb
+											</p>
+										</div>
+										<figcaption>
+											<h3>冒泡排序<span>代码</span></h3>
+											<p>
+												<a href="#"><i class="download"></i></a>
+												<a href="#"><i class="heart"></i></a>
+											
+											</p>
+										</figcaption>			
+									</figure>
+									<figure class="effect-terry">
+										<div class="wenzi">
+											<p>
+												nvnruhgieuthjrtbierb
+											</p>
+										</div>
+										<figcaption>
+											<h3>冒泡排序<span>代码</span></h3>
+											<p>
+												<a href="#"><i class="download"></i></a>
+												<a href="#"><i class="heart" id="heart">
+
+												</i></a>
+												
+											</p>
+										</figcaption>			
+									</figure>
+
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<div class="one-port port5">
+						<div class="trends">
+						    <div class="second-head">
+								<h3>程序代码</h3>
+								<p>以加强资源流通，你可以用到更多的资源；坏处就是别人可能会看到你不想分享给别人的资源（相对性的秘密），另外，一些黑客可能会利用资源共享来入侵你的电脑（可能性很小）。另外，一些黑客可能会利用资源共享来入侵你的电脑（可能性很小）。</p>
+							</div>
+							<div class="grid">
+									<figure class="effect-terry">
+										<div class="wenzi">
+											<p>
+												nvnruhgieuthjrtbierb
+											</p>
+										</div>
+										<figcaption>
+											<h3>动态规划<span>代码</span></h3>
+											<p>
+												<a href="#"><i class="download"></i></a>
+												<a href="#"><i class="heart"></i></a>
+											
+											</p>
+										</figcaption>			
+									</figure>
+									<figure class="effect-terry">
+										<div class="wenzi">
+											<p>
+												nvnruhgieuthjrtbierb
+											</p>
+										</div>
+										<figcaption>
+											<h3>分治算法<span>代码</span></h3>
+											<p>
+												<a href="#"><i class="download"></i></a>
+												<a href="#"><i class="heart"></i></a>
+												>
+											</p>
+										</figcaption>			
+									</figure>
+
+									<figure class="effect-terry">
+										<div class="wenzi">
+											<p>
+												nvnruhgieuthjrtbierb
+											</p>
+										</div>
+										<figcaption>
+											<h3>快速排序 <span>代码</span></h3>
+											<p>
+												<a href="#"><i class="download"></i></a>
+												<a href="#"><i class="heart"></i></a>
+											
+											</p>
+										</figcaption>			
+									</figure>
+									<figure class="effect-terry">
+										<div class="wenzi">
+											<p>
+												nvnruhgieuthjrtbierb
+											</p>
+										</div>
+										<figcaption>
+											<h3>堆排序<span>代码</span></h3>
+											<p>
+												<a href="#"><i class="download"></i></a>
+												<a href="#"><i class="heart"></i></a>
+												
+											</p>
+										</figcaption>			
+									</figure>
+									<figure class="effect-terry">
+										<div class="wenzi">
+											<p>
+												nvnruhgieuthjrtbierb
+											</p>
+										</div>
+										<figcaption>
+											<h3>冒泡排序<span>代码</span></h3>
+											<p>
+												<a href="#"><i class="download"></i></a>
+												<a href="#"><i class="heart"></i></a>
+											
+											</p>
+										</figcaption>			
+									</figure>
+									<figure class="effect-terry">
+										<div class="wenzi">
+											<p>
+												nvnruhgieuthjrtbierb
+											</p>
+										</div>
+										<figcaption>
+											<h3>冒泡排序<span>代码</span></h3>
+											<p>
+												<a href="#"><i class="download"></i></a>
+												<a href="#"><i class="heart"></i></a>
+											</p>
+										</figcaption>			
+									</figure>
+
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+					<div class="file"><a href="javascript:;" class="a-upload">
+                    <input type="file" name="file" id="">点击这里上传文件</a></div>
+				</div>
+				 
+			</div>
+          
+		</div>
+         
+
+		<div class="container">
+            <div class="footer-top wow bounceInLeft animated animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                    <ul>
+                        <li><a href="#"><img src="img/icon1.png" alt=""/></a></li>
+                        <li><a href="#"><img src="img/icon2.png" alt=""/></a></li>
+                        <li><a href="#"><img src="img/icon3.png" alt=""/></a></li>
+                        <li><a href="#"><img src="img/icon4.png" alt=""/></a></li>
+                    </ul>
+            </div>
+                <div class="bottom-menu wow bounceInLeft animated animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                    <ul>
+		                <li><a href="index.html">主页</a>&nbsp;&nbsp;</li>
+					    <li><a href="introduce1.html">实验室介绍</a>&nbsp;&nbsp;</li>
+					  	<li><a href="action-online.html">研究成果</a>&nbsp;&nbsp;</li>
+						<li><a href="resource.html">资源共享</a>&nbsp;&nbsp;</li>
+					   	<li><a href="discuss.html">交流专区</a>&nbsp;&nbsp;</li>
+					   	<li><a href="join.html">加入我们</a>&nbsp;&nbsp;</li>
+                    </ul>
+                </div>
+           <div class="buttom-wen wow fadeInDown animated animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+         		<p>Copyright © 2016 imooc.com All Rights Reserved | 京ICP备 13046642号-2</p>
+     		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>实验室简介</title>
+          <link rel="stylesheet" type="text/css" href="css/index-style.css" />
+          <link rel="stylesheet" type="text/css" href="css/animate.css" />
+          <link rel="stylesheet" href="css/intro.css" type="text/css" />
+          <script type="text/javascript">
+             window.onload=function(){
+              var oBtn1=document.getElementById('one');
+               var oBtn2=document.getElementById('two');
+               var oBtn3=document.getElementById('three');
+                oBtn1.onclick=function()
+                {
+                 document.getElementById('right2').style.display='none';
+                 document.getElementById('right3').style.display='none';
+                 document.getElementById('right1').style.display='block';
+                 // oBtn2.style.background='';
+                 // this.style.background='#3A779F'; 
+                }
+                oBtn2.onclick=function()
+                {
+                 document.getElementById('right1').style.display='none';
+                 document.getElementById('right3').style.display='none';
+                 document.getElementById('right2').style.display='block';
+                 // oBtn1.style.background='';
+                 // this.style.background='#3A779F';
+                 
+                 
+                }
+                oBtn3.onclick=function(){
+                  document.getElementById('right1').style.display='none';
+                  document.getElementById('right2').style.display='none';
+                  document.getElementById('right3').style.display='block';
+                }
+             }
+             
+          </script>
+          <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ 
+  window.scrollTo(0,1); } </script>
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+      $(".scroll").click(function(event){   
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+      });
+    });
+  </script>
+<link rel="stylesheet" href="css/swipebox.css">
+      <script src="js/swipebox.min.js"></script> 
+          <script type="text/javascript">
+          jQuery(function($) {
+            $(".swipebox").swipebox();
+          });
+        </script>
+<script src="js/wow.min.js"></script>
+<script>
+  new WOW().init();
+</script>
+  </head>
+<body>
+    <!-- 导航显示  -->
+  <div id="topdiv">
+    <div id="top-menu">
+      <ul>
+        <li><a href="index.html">主页</a></li>
+        <li><a href="#" class="active">实验室介绍</a>
+       
+        </li>
+        <li><a href="action-online.html" >研究成果</a>
+          <ul>
+            <li><a href="#goto2" id="ON1">学术论文</a></li>
+            <li><a href="#goto1" id="ON2">在线演示</a></li>
+          </ul>
+        </li>
+        <li><a href="resource.html">资源共享</a>
+         
+        </li>
+        <li><a href="discuss.html">交流专区</a></li>
+        <li><a href="join.html">加入我们</a></li>
+      </ul>
+    </div>
+    <div class="search">
+      <form>
+        <input type="text" value="Search.." onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}" >
+        <input type="submit" value="">
+      </form>
+    </div>
+    <div class="loading">
+      <ul>
+        <li><a href="javasrcript:;" id="load2">注册</a></li>
+        <li><a href="javasrcript:;" id="load1">登陆</a></li>
+      </ul>
+    </div>
+  </div>
+    <!-- 实验室介绍 -->
+    <div id="introduce_box">
+      <div id="introduce">
+              <div class="one" >
+                     <p class="big"><strong>实验室介绍</strong></p>
+                     <p class="small"><a href="index.html">首页</a>>实验室介绍</p>
+              </div>
+               <div><hr style="width:100%;"></div>
+               <div id="content">
+                     <div class="left">
+                           <p ><a href="#" id="one">简介</a></p>
+                           <p ><a href="#" id="two">研究方向</a></p>
+                           <p ><a href="#" id="three">成员介绍</a></p>
+                     </div>
+                     <div class="right wow bounceIn animated animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;" id="right1">
+                          <h4 style="font-size:25px;margin-bottom:20px;color:#30A3C5;">实验室发展史</h4>
+                          <div class="tit">
+                              <ul>
+                                <li>中文名：&nbsp;&nbsp;&nbsp;&nbsp;大数据挖掘实验室</li>
+                                <li>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;编：&nbsp;&nbsp;&nbsp;&nbsp;710121</li>
+                                <li>简&nbsp;&nbsp;&nbsp;&nbsp;称：&nbsp;&nbsp;&nbsp;&nbsp;数据挖掘</li>
+                                <li>协会类型：&nbsp;&nbsp;&nbsp;&nbsp;应用类</li>
+                                <li>所属地区：&nbsp;&nbsp;&nbsp;&nbsp;陕西西安</li>
+                              </ul>
+                          </div>
+                         
+                          <div class="text"></div>
+                             <p style="text-indent:2em;margin-bottom:20px;"> 2014年4月，计算机学院为响应学校号召，更好的为学生参与科研训练和开放实验创造有利条件，在计算机基础实验教学中心一楼机房（图书馆B103室）内成立了计算机应用技术协会。协会自创办之初发展至今，短短的半年时间里已通过推荐、考核、面试等方式，吸纳学生28人（其中大四9人、大三9人、大二10人）。目前，参与协会日常组织管理、项目辅导、问题解答的教师共计4人。参加计算机应用技术协会的学生，一般都参与了辅导教师申报项目的开发与实践训练，由辅导教师定期为学生讲解相关技术问题，解答在实践训练过程中遇到的重难点问题。</p>
+                             <p style="text-indent:2em;margin-bottom:20px;">开放实践平台搭建之初，学院通过组织优秀的教师队伍来吸引学生参与素质能力拓展的开放实验活动和简单的科研训练项目，由教师指导部分能力较强的高年级学生尽快提高自身技术水平和实践能力，再由这部分能力较强的高年级学生去帮助和带动能力较弱的低年级学生完成基础技术知识的学习和积累，形成以高年级学生为骨干，带动低年级学生参与科研训练和技术学习的良好学习实践氛围，实现学习、实践、创新三个阶段滚动式发展的新型开放实践模式。最终，通过这种新型开放实践模式培养、锻炼一批学生，为科研训练和专业竞赛储备、选拔一批实践能力较强的学生。</p>
+                             <p style="text-indent:2em;margin-bottom:20px;">协会中的学生一般利用课余时间在该开放实践平台上进行项目相关技术知识的学习和实践，参与辅导教师的科研训练项目或开放实验活动。学院定期安排辅导教师为学生提供项目内容讲解和技术问题答疑，并组织学生对所学技术进行讨论，对项目内容展开实训，通过这种学习与实践相结合、从实践中来到实践中去的知识教授、技术应用、思路创新的开放实践过程，学生对所学内容有了真实的体会和深刻的理解，能够在项目开发过程中结合自身实践活动，做出更好的需求分析和解决方案，在现有的模式中引入新思路，对知识的理解也从有限的书本内容升华到了实际生产、生活的点点滴滴，充分调动起了学生参与项目开发的工作热情和探索创新之路的开拓精神，极大的激发了学生的学习积极性，将所学的理论知识充分融入了实际生活的应用中。</p>
+                             <p style="text-indent:2em;margin-bottom:20px;">目前，计算机应用技术协会的师生们通过半年多的磨合与适应，着眼未来蓬勃的计算机互联网应用技术服务领域，将协会的发展方向定位于大数据应用和数据挖掘这一主线，结合开放实验的进行、原有项目的完成、新项目的申报、相关专业竞赛的参与等实践活动，以项目为驱动之源，打牢技术理论基础，锤炼实践动手能力。立足于互联网衍生应用系统的开发和相关专业竞赛的准备，全面培养学生的科学作风、实验操作技能和创造性思维，培养学生发现、分析和解决实际问题的综合素质能力，使学生具备一定创新精神和实践能力，进一步提高学生的创业、就业竞争力。</p>
+                             <p class="b_indent"><b>附录：《开放实践平台在研项目》</b></p>
+                            <p class="b_indent">1)2013年省级大学生创新创业训练项目《基于物联网的校园物流中转站的设计与建立》</p>
+                            <p class="b_indent">2)2014年省级大学生创新创业训练项目《基于大数据分析的个性化消费推荐系统》</p>
+                            <p class="b_indent">3)2014年省级大学生创新创业训练项目《基于数据挖掘的二手图书资料交易系统的设计与实现》</p>
+                            <p class="b_indent">4)2014年省级大学生创新创业训练项目《基于3G智能手机的自助快递取件柜系统的设计与实现》</p>
+                            <p class="b_indent">5)2014年校级开放实验项目《基于数据仓库的数据分析与挖掘系统设计与实现》</p>
+                            <p class="b_indent">6)2014年院级开放实验项目《基于数据分析的快件智能分配、排序系统的设计与实现》</p>
+                            <p class="b_indent">7)2014年院级开放实验项目《基于数据分析的快件智能分配、排序系统的设计与实现》</p>
+                            <p class="b_indent">8)计算机基础实验教学中心网站建设</p>
+                            <p class="b_indent">9)计算机应用技术协会网站建设</p>
+                        </div>
+                    
+                   <div id="right2" class="right2 wow bounceInLeft animated animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                         <h4 style="font-size:25px;margin-bottom:20px;color:#30A3C5;">实验室现设三大方向：<span>数据挖掘&nbsp;&nbsp;&nbsp;&nbsp;数据收集&nbsp;&nbsp;&nbsp;&nbsp;数据分析</span></h4>
+                          <div id="html">
+                              <div class="img"><img src="img/数据.jpg" alt="html"></div>
+                              <div class="img_text">
+                                    <h3>数据挖掘</h3>
+                                    <p>介绍</p>
+                              <p>。。。。。</p>
+                              <p>。。。。。。</p>
+                              </div>
+                          </div>
+                          
+                          <div id="php">
+                             <div class="img"><img src="img/数据.jpg" alt="php"></div>
+                             <div class="img_text">
+                                  <h3>数据收集</h3>
+                                  <p>。。。</p>
+                                  <p>....。</p>
+                                  <p>......。</p>
+                             </div>
+                          </div>
+                            
+                           <div id="java">
+                               <div class="img"><img src="img/java.png" alt="java"></div>
+                               <div class="img_text">
+                                  <h3 >数据分析</h3>
+                              <p>。。。。。</p>
+                              <p>。。。。。</p>
+                              <p>。。。。。</p>
+                               </div>
+                           </div>    
+                    </div>
+
+                    <div id="right3" class="right3 wow bounceInRight animated animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                      <h4 style="font-size:25px;margin-bottom:20px;color:#30A3C5;">实验室现有成员</h4>
+                     
+                        <div class="group">
+                          <h3>数据挖掘小组：</h3>
+                          <table>
+                            <tr>
+                              <td>张三</td>
+                              <td>院系</td>
+                              <td>专业班级</td>
+                            </tr>
+                            <tr>
+                              <td>李四</td>
+                              <td>院系</td>
+                              <td>专业班级</td>
+                            </tr>
+                            <tr>
+                              <td>王五</td>
+                              <td>院系</td>
+                              <td>专业班级</td>
+                            </tr>
+                          </table>
+                        </div>
+                        <div class="group">
+                          <h3>数据收集小组:</h3>
+                          <table>
+                            <tr>
+                              <td>张三</td>
+                              <td>院系</td>
+                              <td>专业班级</td>
+                            </tr>
+                            <tr>
+                              <td>李四</td>
+                              <td>院系</td>
+                              <td>专业班级</td>
+                            </tr>
+                            <tr>
+                              <td>王五</td>
+                              <td>院系</td>
+                              <td>专业班级</td>
+                            </tr>
+                          </table>
+                        </div>
+                        <div class="group">
+                          <h3 >数据分析小组:</h3>
+                          <table>
+                            <tr>
+                              <td>张三</td>
+                              <td>院系</td>
+                              <td>专业班级</td>
+                            </tr>
+                            <tr>
+                              <td>李四</td>
+                              <td>院系</td>
+                              <td>专业班级</td>
+                            </tr>
+                            <tr>
+                              <td>王五</td>
+                              <td>院系</td>
+                              <td>专业班级</td>
+                            </tr>
+                          </table>
+                        </div>
+               
+                    </div>
+                  </div>  
+               </div>
+            </div>                 
+
+    <!-- 底部显示 -->
+  <div class="container">
+            <div class="footer-top wow bounceInLeft animated animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                    <ul>
+                        <li><a href="#"><img src="img/icon1.png" alt=""/></a></li>
+                        <li><a href="#"><img src="img/icon2.png" alt=""/></a></li>
+                        <li><a href="#"><img src="img/icon3.png" alt=""/></a></li>
+                        <li><a href="#"><img src="img/icon4.png" alt=""/></a></li>
+                    </ul>
+            </div>
+                <div class="bottom-menu wow bounceInLeft animated animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                    <ul>
+                    <li><a href="index.html">主页</a>&nbsp;&nbsp;</li>
+              <li><a href="introduce1.html">实验室介绍</a>&nbsp;&nbsp;</li>
+              <li><a href="action-online.html">研究成果</a>&nbsp;&nbsp;</li>
+            <li><a href="resource.html">资源共享</a>&nbsp;&nbsp;</li>
+              <li><a href="discuss.html">交流专区</a>&nbsp;&nbsp;</li>
+              <li><a href="join.html">加入我们</a>&nbsp;&nbsp;</li>
+                    </ul>
+                </div>
+           <div class="buttom-wen wow fadeInDown animated animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+            <p>Copyright © 2016 imooc.com All Rights Reserved | 京ICP备 13046642号-2</p>
+        </div>
+        </div>
+       
+</body>
+</html>

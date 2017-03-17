@@ -1,0 +1,370 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>discuss</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/discuss.css" />
+<link rel="stylesheet" type="text/css" href="css/animate.css" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript">
+ addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script language="JavaScript" type="text/javascript" src="js/discuss.js">
+ </script>
+ <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ 
+	window.scrollTo(0,1); } </script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+	</script>
+<link rel="stylesheet" href="css/swipebox.css">
+			<script src="js/swipebox.min.js"></script> 
+			    <script type="text/javascript">
+					jQuery(function($) {
+						$(".swipebox").swipebox();
+					});
+				</script>
+<script src="js/wow.min.js"></script>
+<script>
+	new WOW().init();
+</script>
+ </head>
+<body>
+	<div id="topdiv">
+		<div id="top-menu">
+			<ul>
+				<li><a href="index.html" >主页</a></li>
+				<li><a href="introduce1.html" >实验室介绍</a>
+					<ul>
+						<!-- <li><a href="#">实验室简介</a></li>
+						<li><a href="#">实验室成员</a></li>
+						<li><a href="#">研究方向</a></li> -->
+					</ul>
+				</li>
+				<li><a href="action-online.html" >研究成果</a>
+					<ul>
+						<li><a href="javascript:;">学术论文</a></li>
+						<li><a href="javascript:;">在线演示</a></li>
+					</ul>
+				</li>
+				<li><a href="resource.html" >资源共享</a>
+				</li>
+				<li><a href="discuss.html"  class="active">交流专区</a></li>
+				<li><a href="join.html" >加入我们</a></li>
+			</ul>
+		</div>
+		<div class="search">
+			<form>
+				<input type="text" value="用户/动态/帖子.." onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}" >
+				<input type="submit" value="">
+			</form>
+		</div>
+		<div class="loading">
+			<ul>
+				<li><a href="#" id="load2">注册</a></li>
+				<li><a href="#" id="load1">登陆</a></li>
+			</ul>
+		</div>
+		<script>
+		 $("span.menu").click(function(){
+		 $(".top-menu ul").slideToggle("slow" , function(){
+		 });
+		 });
+		</script>
+	</div>
+		<div class="concent">
+			<div class="top-port">
+			
+				<div class="img-name wow bounceIn animated animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+					<div class="load-img">
+						<a href="#"><img id="user-img" src="img/userimg.jpg" alt="" /></a>
+					</div>
+					<div class="load-name">
+						<span>游客<br/>
+						<span>U-36279019</span>
+					</div>
+				</div>
+				<div class="centent-hang1"></div>  <!--加透明时用-->
+				<div class="centent-hang">
+						<ul>
+						<li><a href="#">帖子动态</a></li>
+						<li><a href="#">关于我</a></li>
+						<li><a href="#">我的帖子</a></li>
+						<li><a href="#">帖子精华</a></li>
+						<li><a href="#">高手云集</a></li>
+						</ul>
+					
+				</div>
+			</div>
+
+			<div class="botton-port">
+				<div class="left-hang">
+					<div class="hang3">
+					<h2>知识聚焦</h2>
+					</div>
+					<div class="hang2" id="div1">
+						<ul  id="know">
+							<li>数据聚类</li>
+							<li>信号处理</li>
+							<li>遗传算法</li>
+							<li>空间分析</li>
+							<li>统计模拟</li>
+							<li>安全管理</li>
+							<li>数据库演变</li>
+						</ul>
+						<div  class="one-port port1" id="port1">
+
+							<p><h3>数据聚类 </h3>对于静态 数据分析的一门技术，在许多领域受到广泛应用，包括 机器学习， 数据挖掘， 模式识别， 图像分析以及 生物信息。聚类是把相似的对象通过静态 分类的方法分成不同的组别或者更多的 子集（subset），这样让在同一个子集中的成员对象都有相似的一些属性，常见的包括在 坐标系中更加短的空间距离等。<br/>
+							<h3>K-均值法及衍生算法</h3>
+							K-均值法聚类 K-均值算法表示以空间中k个点为中心进行聚类，对最靠近他们的对象归类。
+							数据集合为三维，聚类以两点: = ( 1, 2, 3) and = ( 1, 2, 3). 中心点 变为 = ( 1, 2, 3), where 1 = ( 1 + 1)/2 and 2 = ( 2 + 2)/2 and 3 = ( 3 + 3)/2. 算法归纳为 (J. MacQueen, 1967):
+							选择聚类的个数 . 任意产生 个聚类，然后确定聚类中心，或者直接生成 个中心。 对每个点确定其聚类中心点。 再计算其聚类新中心. 重复以上步骤直到满足收敛要求。(通常就是确定的中心点不再改变). 该算法的最大优势在于简洁和快速。<br>
+							<h3>距离测量</h3>
+							在结构性聚类中，关键性的一步就是要选择测量的距离。一个简单的测量就是使用 曼哈顿距离，它相当于每个变量的绝对差值之和。该名字的由来起源于在纽约市区测量街道之间的距离就是由人步行的步数来确定的。
+							一个更为常见的测量是欧式空间距离，他的算法是找到一个空间，来计算每个空间中点到原点的距离，然后对所有距离进行换算。
+							</p>
+							<a href="http://baike.sogou.com/v63142381.htm?fromTitle=%E6%95%B0%E6%8D%AE%E8%81%9A%E7%B1%BB" ><p>想了解更多</p></a>
+							<input type="button" value="取消" />
+						</div>
+						<div  class="one-port port2" id="port2">
+							<p><h3>加窗优化处理</h3>论文阐述了模拟信号到数字信号的处理过程中,信号采样频率与加窗处理对信噪比与分辨率的影响。举例包含高斯白噪声的频率成分单一的无限衰减震荡信号进行数字采样分析时的分辨率与信噪比之间的矛盾。提出采用截断信噪比恶化部分的样点信号,然后将截断部分补零样点的办法,在不影响信号分辨率的情况下,提高信噪比。<br/>
+							<h3>信号处理的应用</h3>
+							论文阐述了模拟信号到数字信号的处理过程中,信号采样频率与加窗处理对信噪比与分辨率的影响。举例包含高斯白噪声的频率成分单一的无限衰减震荡信号进行数字采样分析时的分辨率与信噪比之间的矛盾。提出采用截断信噪比恶化部分的样点信号,然后将截断部分补零样点的办法,在不影响信号分辨率的情况下,提高信噪比。原理不同于其他传统的干涉仪。由于干涉信号的独特性,对其处理技术亦不同。应用传统的条纹计数方法会带来很大的误差,其值不小于0.5μm。本文根据时域波形特点,提出了一种精确的信号及其参数的估计方法,不但可完成绝对距离的测量。 <br>
+							<h3>信号初步处理</h3>
+							信号数字化处理的基本步骤 随着微电子技术和信号处理技术的发展,在工程测试中,数字信号处理方法得到广泛的应用,已成为测试系统中的重要部分。从传感器获取的测试信号中大多数为模拟信号,进行数字信号处理之前,一般先要对信号作预处理和数字化处理。</p>
+							<a href="http://baike.sogou.com/v63142381.htm?fromTitle=%E6%95%B0%E6%8D%AE%E8%81%9A%E7%B1%BB" ><p>想了解更多</p></a>
+							<input type="button" value="取消" />
+						</div>
+						<div  class="one-port port3">
+							<p><h3>遗传算法思想</h3>
+							遗传算法是受达尔文的进化论的启发，借鉴生物进化过程而提出的一种启发式搜索算法。因此在介绍遗传算法前有必要简单的介绍生物进化知识。繁殖过程，会发生基因交叉，基因突变 ，适应度低的个体会被逐步淘汰，而适应度高的个体会越来越多。那么经过N代的自然选择后，保存下来的个体都是适应度很高的，其中很可能包含史上产生的适应度最高的那个个体。<br/>
+							<h3>适应度函数</h3>
+							用于评价某个染色体的适应度，用f(x)表示。有时需要区分染色体的适应度函数与问题的目标函数。例如：0-1背包问题的目标函数是所取得物品价值，但将物品价值作为染色体的适应度函数可能并不一定适合。适应度函数与目标函数是正相关的，可对目标函数作一些变形来得到适应度函数。为了防止进化过程中产生的最优解被交叉和变异所破坏，可以将每一代中的最优解原封不动的复制到下一代中。可在3个基本操作的基础上增加一个插入操作。插入操作将染色体中的某个随机的片段移位到另一个随机的位置。<br>
+							<h3>自适应遗传算法</h3>
+							把问题映射到基因型上我们已经解决了，现在就是怎么去考核一个基因型对当前环境的适应度，换句话说就是更有可能存活遗传下去，那么这里我们必须得设计一个适应函数f，因为是求背包的最大值，又因为不能超过背包所能承受的总重量，所以用h(x)表示第二个不超过总重量的条件，f(y)表示背包的价值，所以得到适应函数f(h(x))。</p>
+							<a href="http://baike.sogou.com/v63142381.htm?fromTitle=%E6%95%B0%E6%8D%AE%E8%81%9A%E7%B1%BB" ><p>想了解更多</p></a>
+							<input type="button" value="取消" />
+						</div>
+						<div  class="one-port port4">
+							<p><h3>加窗优化处理</h3>论文阐述了模拟信号到数字信号的处理过程中,信号采样频率与加窗处理对信噪比与分辨率的影响。举例包含高斯白噪声的频率成分单一的无限衰减震荡信号进行数字采样分析时的分辨率与信噪比之间的矛盾。提出采用截断信噪比恶化部分的样点信号,然后将截断部分补零样点的办法,在不影响信号分辨率的情况下,提高信噪比。<br/>
+							<h3>信号处理的应用</h3>
+							论文阐述了模拟信号到数字信号的处理过程中,信号采样频率与加窗处理对信噪比与分辨率的影响。举例包含高斯白噪声的频率成分单一的无限衰减震荡信号进行数字采样分析时的分辨率与信噪比之间的矛盾。提出采用截断信噪比恶化部分的样点信号,然后将截断部分补零样点的办法,在不影响信号分辨率的情况下,提高信噪比。原理不同于其他传统的干涉仪。由于干涉信号的独特性,对其处理技术亦不同。应用传统的条纹计数方法会带来很大的误差,其值不小于0.5μm。本文根据时域波形特点,提出了一种精确的信号及其参数的估计方法,不但可完成绝对距离的测量。 <br>
+							<h3>信号初步处理</h3>
+							信号数字化处理的基本步骤 随着微电子技术和信号处理技术的发展,在工程测试中,数字信号处理方法得到广泛的应用,已成为测试系统中的重要部分。从传感器获取的测试信号中大多数为模拟信号,进行数字信号处理之前,一般先要对信号作预处理和数字化处理。</p>
+							<a href="http://baike.sogou.com/v63142381.htm?fromTitle=%E6%95%B0%E6%8D%AE%E8%81%9A%E7%B1%BB" ><p>想了解更多</p></a>
+							<input type="button" value="取消" />
+						</div>
+						<div  class="one-port port5">
+							<p><h3>数据聚类 </h3>对于静态 数据分析的一门技术，在许多领域受到广泛应用，包括 机器学习， 数据挖掘， 模式识别， 图像分析以及 生物信息。聚类是把相似的对象通过静态 分类的方法分成不同的组别或者更多的 子集（subset），这样让在同一个子集中的成员对象都有相似的一些属性，常见的包括在 坐标系中更加短的空间距离等。<br/>
+							<h3>K-均值法及衍生算法</h3>
+							K-均值法聚类 K-均值算法表示以空间中k个点为中心进行聚类，对最靠近他们的对象归类。
+							数据集合为三维，聚类以两点: = ( 1, 2, 3) and = ( 1, 2, 3). 中心点 变为 = ( 1, 2, 3), where 1 = ( 1 + 1)/2 and 2 = ( 2 + 2)/2 and 3 = ( 3 + 3)/2. 算法归纳为 (J. MacQueen, 1967):
+							选择聚类的个数 . 任意产生 个聚类，然后确定聚类中心，或者直接生成 个中心。 对每个点确定其聚类中心点。 再计算其聚类新中心. 重复以上步骤直到满足收敛要求。(通常就是确定的中心点不再改变). 该算法的最大优势在于简洁和快速。<br>
+							<h3>距离测量</h3>
+							在结构性聚类中，关键性的一步就是要选择测量的距离。一个简单的测量就是使用 曼哈顿距离，它相当于每个变量的绝对差值之和。该名字的由来起源于在纽约市区测量街道之间的距离就是由人步行的步数来确定的。
+							一个更为常见的测量是欧式空间距离，他的算法是找到一个空间，来计算每个空间中点到原点的距离，然后对所有距离进行换算。
+							</p>
+							<a href="http://baike.sogou.com/v63142381.htm?fromTitle=%E6%95%B0%E6%8D%AE%E8%81%9A%E7%B1%BB" ><p>想了解更多</p></a>
+							<input type="button" value="取消" />
+						</div>
+						<div  class="one-port port6">
+							<p><h3>遗传算法思想</h3>
+							遗传算法是受达尔文的进化论的启发，借鉴生物进化过程而提出的一种启发式搜索算法。因此在介绍遗传算法前有必要简单的介绍生物进化知识。繁殖过程，会发生基因交叉，基因突变 ，适应度低的个体会被逐步淘汰，而适应度高的个体会越来越多。那么经过N代的自然选择后，保存下来的个体都是适应度很高的，其中很可能包含史上产生的适应度最高的那个个体。<br/>
+							<h3>适应度函数</h3>
+							用于评价某个染色体的适应度，用f(x)表示。有时需要区分染色体的适应度函数与问题的目标函数。例如：0-1背包问题的目标函数是所取得物品价值，但将物品价值作为染色体的适应度函数可能并不一定适合。适应度函数与目标函数是正相关的，可对目标函数作一些变形来得到适应度函数。为了防止进化过程中产生的最优解被交叉和变异所破坏，可以将每一代中的最优解原封不动的复制到下一代中。可在3个基本操作的基础上增加一个插入操作。插入操作将染色体中的某个随机的片段移位到另一个随机的位置。<br>
+							<h3>自适应遗传算法</h3>
+							把问题映射到基因型上我们已经解决了，现在就是怎么去考核一个基因型对当前环境的适应度，换句话说就是更有可能存活遗传下去，那么这里我们必须得设计一个适应函数f，因为是求背包的最大值，又因为不能超过背包所能承受的总重量，所以用h(x)表示第二个不超过总重量的条件，f(y)表示背包的价值，所以得到适应函数f(h(x))。</p>
+							<a href="http://baike.sogou.com/v63142381.htm?fromTitle=%E6%95%B0%E6%8D%AE%E8%81%9A%E7%B1%BB" ><p>想了解更多</p></a>
+							<input type="button" value="取消" />
+						</div>
+						<div  class="one-port port7">
+							<p><h3>加窗优化处理</h3>论文阐述了模拟信号到数字信号的处理过程中,信号采样频率与加窗处理对信噪比与分辨率的影响。举例包含高斯白噪声的频率成分单一的无限衰减震荡信号进行数字采样分析时的分辨率与信噪比之间的矛盾。提出采用截断信噪比恶化部分的样点信号,然后将截断部分补零样点的办法,在不影响信号分辨率的情况下,提高信噪比。<br/>
+							<h3>信号处理的应用</h3>
+							论文阐述了模拟信号到数字信号的处理过程中,信号采样频率与加窗处理对信噪比与分辨率的影响。举例包含高斯白噪声的频率成分单一的无限衰减震荡信号进行数字采样分析时的分辨率与信噪比之间的矛盾。提出采用截断信噪比恶化部分的样点信号,然后将截断部分补零样点的办法,在不影响信号分辨率的情况下,提高信噪比。原理不同于其他传统的干涉仪。由于干涉信号的独特性,对其处理技术亦不同。应用传统的条纹计数方法会带来很大的误差,其值不小于0.5μm。本文根据时域波形特点,提出了一种精确的信号及其参数的估计方法,不但可完成绝对距离的测量。 <br>
+							<h3>信号初步处理</h3>
+							信号数字化处理的基本步骤 随着微电子技术和信号处理技术的发展,在工程测试中,数字信号处理方法得到广泛的应用,已成为测试系统中的重要部分。从传感器获取的测试信号中大多数为模拟信号,进行数字信号处理之前,一般先要对信号作预处理和数字化处理。</p>
+							<a href="http://baike.sogou.com/v63142381.htm?fromTitle=%E6%95%B0%E6%8D%AE%E8%81%9A%E7%B1%BB" ><p>想了解更多</p></a>
+							<input type="button" value="取消" />
+						</div>
+					</div>
+						
+					<div class="hang2-port">
+							<div class="hang2-img">
+								<img src="img/left.jpg">
+							</div>
+							<div class="hang2-wen">
+								<p>大数据技术作为决策神器，日益在社会治理和企业管理中起到不容忽视的作用。应用的角度解读大数据与云计算里的具体内容。大数据技术作为决策神器,应用的角度解读大数据与.</p>
+							</div>
+					</div>
+					
+				</div>
+				<div class="center-ban wow slideInDown animated animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+					<div class="top-wen">
+						<div class="top-img1">
+							<div class="top-img2">
+							<img src="img/top.png">
+							</div>
+							<div class="top-wen2">
+								<h3>论坛精华</h3>
+							</div>
+							<div class="top-wen3">
+								<p>每日精彩，值得一看哦！</p>
+							</div>
+						</div>
+						<div class="txt1">
+							<div class="txt1-img">
+								<img src="img/txt.jpg" alt="#" />
+							</div>
+							<div class="txt1-wen">
+								<ul>
+									<li><a href="#">分布式存储计算架构.神经网络、神经分析</a></li>
+									<li><a href="#">多种存储模型，数据融合和集成</a></li>
+									<li><a href="#">程序开发辅助工具，时间序列分析</a></li>
+									<li><a href="#">多种数据库的演变，键值，时间序列</a></li>
+									<li><a href="#">调度协调架构工具，集成开发环境</a></li>
+									<li><a href="#">程序开发辅助工具，大数据系统部署</a></li>
+									<li><a href="#">多种数据库的演变，10大经典算法</a></li>
+									<li><a href="#">调度协调架构工具，神经分析、优化</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="speech" class="speech">
+						<div class="speech-wen">
+							<ul>
+								<li><div class="hui"><a href="#">企业管理中的选择和开拓新市场的可靠信息来源；中的选择</a></div></li>
+								<li><div class="hui"><a href="#">企业管理中的选择和开拓新市场的可靠中的选择来源；</a></div></li>
+								<li><div class="hui"><a href="#">企业管理选择和中的选择和开拓新,开拓新市场的可靠信息来源；</a></div></li>
+								<li><div class="hui"><a href="#">企业管理中的中的选择和开拓,开拓新市场的可靠信息来源；</a></div></li>
+								<li><div class="hui"><a href="#">企业管理中的选择和开拓新市场的可靠信息来源；</a></div></li>
+								<li><div class="hui"><a href="#">企业管理中的选择和开拓新市场的可靠信息来源；</a></div></li>
+								
+								
+							</ul>
+						
+					
+						</div>
+						
+					</div>
+					<div id="repeat" class="repeat">
+						<div class="repeat-wen">
+							<h3>想要发表意见吗，写下你的想法吧！</h3>
+							<p>组文本框我样一动网颜色果，效果可注册一以式效想鼠面是标去下，就页看做到让放在文面会本论坛框上变。 </p>
+						</div>
+						<div id="repeat-speech" class="repeat-speech">
+							<h4>发表帖子</h4>
+							<label for="textfield" class="title"></label>
+							<textarea name="textarea" id="textarea" cols="60" rows="10"></textarea>
+							<input type="button" value="提交" />
+							<input type="button" value="删除" />
+						</div>
+						<div class="repeat-wen1">
+							<p>黄钻贵族 | QQ互联 | 认证服务 | 腾讯博客 | 腾讯客服 | Complaint Guidelines | 粤网文[2011]0483-070号</p>
+							<p>Copyright © 2005 - 2016 Tencent.All Rights Reserved.</p>
+							<p>腾讯公司 版权所有</p>
+							
+						</div>
+					</div>
+				</div>
+				<div class="right-tui wow bounceInRight animated animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+					<div class="tui-wen">
+						<div class="tui1">
+							<img src="img/tuiimg.png" alt="#" />
+							<p>推荐精彩</p>
+
+						</div>
+						<div class="tui2">
+							<ul>
+								<li><a href="#">场的可靠源信息来靠源</a></li>
+								<li><a href="#">信靠源信息息来源</a></li>
+								<li><a href="#">信息的可靠信息来源</a></li>
+								<li><a href="#">场的可靠源信息息来源</a></li>
+								<li><a href="#">靠源靠信息来源</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="lunbo-img">
+						<div id="lunbo">
+							<div id="lunbo-list" style="left:-200px;">
+								<img src="img/lunbo5.jpg" alt="photo5" />
+								<img src="img/lunbo1.jpg" alt="photo1" />
+								<img src="img/lunbo2.jpg" alt="photo2" />
+								<img src="img/lunbo3.jpg" alt="photo3" />
+								<img src="img/lunbo4.jpg" alt="photo4" />
+								<img src="img/lunbo5.jpg" alt="photo5" />
+								<img src="img/lunbo3.jpg" alt="s" />
+								<img src="img/lunbo1.jpg" alt="photo1" />
+							</div>
+							<div id="lunbo-button">
+								<span index="1" class="on"></span>
+								<span index="2"></span>
+							    <span index="3"></span>
+							    <span index="4"></span>
+							    <span index="5"></span>
+				                <span index="6"></span>
+							</div>
+							<a href="javascript:;" id="prev" class="arrow">&lt;</a>
+							<a href="javascript:;" id="next" class="arrow">&gt;</a>
+						</div>
+						<div class="lunbo-wen">
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;最早提出大数据时代到来的是全球知名咨询公司麦肯锡， 大数据在物理学、生物学、环境生态学等领域以及军事、金融、通讯等行业存在已有时日，却因为近年来互联网和信息行业的发展而引起人们关注。大数据作为云计算、互联网之后又IT行业又一大颠覆性的<a href="http://baike.sogou.com/v57928764.htm?fromTitle=%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%97%B6%E4"><span>大数据技术革命</span></a>。</p>
+						</div>
+					</div>
+					<div class="centen-num">
+						<div class="centen-port">
+							<img src="img/back01.jpg" />
+							<p>fbwbfh</p>
+							<p>rwjrgkjwrgjg</p>
+							<p>fnwiwigwiurhwiuh</p>
+						</div>
+						<div class="centen-port">
+							<img src="img/back02.jpg" />
+							<p>fbwbfh</p>
+							<p>rwjrgkjwrgjg</p>
+							<p>fnwiwigwiurhwiuh</p>
+						</div>
+						<div class="centen-port">
+							<img src="img/back03.jpg" />
+							<p>fbwbfh</p>
+							<p>rwjrgkjwrgjg</p>
+							<p>fnwiwigwiurhwiuh</p>
+						</div>
+						<div class="centen-port">
+							<img src="img/back04.jpg" />
+							<p>fbwbfh</p>
+							<p>rwjrgkjwrgjg</p>
+							<p>fnwiwigwiurhwiuh</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="container">
+            <div class="footer-top wow bounceInLeft animated animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                    <ul>
+                        <li><a href="#"><img src="img/icon1.png" alt=""/></a></li>
+                        <li><a href="#"><img src="img/icon2.png" alt=""/></a></li>
+                        <li><a href="#"><img src="img/icon3.png" alt=""/></a></li>
+                        <li><a href="#"><img src="img/icon4.png" alt=""/></a></li>
+                    </ul>
+            </div>
+                <div class="bottom-menu wow bounceInLeft animated animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                    <ul>
+		                <li><a href="index.html">主页</a>&nbsp;&nbsp;</li>
+					    <li><a href="introduce1.html">实验室介绍</a>&nbsp;&nbsp;</li>
+					  	<li><a href="action-online.html">研究成果</a>&nbsp;&nbsp;</li>
+						<li><a href="resource.html">资源共享</a>&nbsp;&nbsp;</li>
+					   	<li><a href="discuss.html">交流专区</a>&nbsp;&nbsp;</li>
+					   	<li><a href="join.html">加入我们</a>&nbsp;&nbsp;</li>
+                    </ul>
+                </div>
+           <div class="buttom-wen wow fadeInDown animated animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+         		<p>Copyright © 2016 imooc.com All Rights Reserved | 京ICP备 13046642号-2</p>
+     		</div>
+	</div>
+</body>
+</html>

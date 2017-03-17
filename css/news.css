@@ -1,0 +1,18 @@
+.main{background: #FBFBFB;
+	width: 1250px;
+margin: 0px auto;}
+#news-main{
+	width: 900px;
+	
+	/*float: right;*/
+	margin: 20px auto;
+	/*border: 1px solid #ccc;*/
+}
+#news-main .one p{display:inline-block;}
+#news-main .one a,.pro a,.next a{color:blue; text-decoration:none;font-size: 15px;}
+.big{float: left;font-size: 25px;}
+.small{float: right;line-height: 40px;}
+.title{text-align: center;}
+.vsb p{text-indent: 30px;line-height: 30px;}
+/*.vsb p span{text-align: right;margin-right:20px; }*/
+.pro a:hover,.next a:hover{color: green;}

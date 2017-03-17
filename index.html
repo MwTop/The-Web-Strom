@@ -1,0 +1,289 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+<title>数据挖掘</title>
+<meta charset="UTF-8">
+<meta name="keywords" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/index-style.css" />
+<link rel="stylesheet" type="text/css" href="css/animate.css" />
+ <link rel="stylesheet" type="text/css" href="css/onload.css" />   
+   <script type="text/javascript" src="js/check.js"></script>
+   <script type="text/javascript" src="js/jquery.min.js"></script>
+   <script>
+   	   $(function(){
+           $(window).load(function(){  
+           	// 利用ajax方法实现         
+           	    $.ajax({
+              	url:"title.txt?t="+Math.random(),
+              	type:'get',
+              	async:true,
+              	success:function(data,status){
+                    var dataObj=eval("("+data+")");
+              // alert(dataObj.title.length);                    
+                    for(var i=0;i<dataObj.title.length;i++){
+                  	var text="<p><a href='news.html'>"+ 
+                    dataObj.title[i] +"<span class='date'>&nbsp;&nbsp;["+ dataObj.time[i] +"]</span></a></p>";
+                    // document.getElementById("div1").createElement('div .imfor-port');
+                    var cont=$("<div class='imfor-port'></div>").html(text);
+                      $('#div1').append(cont);
+                    // $('.imfor-port').eq(i).append(text);
+                    $("#div1 a").eq(i).attr('href','news.html?t='+i);
+                    // alert($("#div1 a").eq(i).attr('href'));
+              };
+              a();
+             }
+            });
+               });
+         
+               function a(){
+              	var obj1=document.getElementById("div1");
+		        var obj2=document.getElementById("div2");
+                var obj=document.getElementById("scrollmeg");
+		        obj2.innerHTML=obj1.innerHTML;
+
+		function movepic()
+		{
+		   if (obj2.offsetHeight-obj.scrollTop<=0)
+		   {
+		     obj.scrollTop=obj.scrollTop-obj1.offsetHeight;
+		   }
+		   else
+		   {
+		     obj.scrollTop++;
+		   }
+		}
+			var speed=20;
+			var mymove=setInterval(movepic,speed);
+			obj.onmouseover=function(){ clearInterval(mymove);};
+			obj.onmouseout=function(){mymove=setInterval(movepic,speed);};
+              }
+     });
+   	    function load(){
+		
+		var OP1=document.getElementById("load1");
+		var Body1=document.getElementById("full1");
+		var Body2=document.getElementById("full2");
+		var Close1=document.getElementById('CL1');
+		var Close2=document.getElementById('CL2');
+		var OP2=document.getElementById('load2');
+		
+
+		 
+		   	Body1.style.display='block';
+		 
+		 Close1.onclick=function(){Body1.style.display='none';} 
+	   addEventListener("load", function() { 
+		setTimeout(hideURLbar, 0); }, false);
+		 function hideURLbar(){ window.scrollTo(0,1);} 
+   	      }  
+        function Return(){
+   	    	$("#list1").css('display','block');
+              $("#list2").css('display','none');
+   	    }         
+   </script>
+   <script type="application/x-javascript"> 
+   addEventListener("load", function(){ 
+   	setTimeout(hideURLbar, 0); }, false); 
+    function hideURLbar(){ 
+	window.scrollTo(0,1); } 
+	</script>
+
+<script src="js/wow.min.js"></script>
+<script type="text/javascript">
+	 $(function(){
+	 	 $("#Submit").click(function(){
+	 	 	$('#full1').hide();
+	 	 	$.ajax({
+	 		url:'load.php',
+	 		type:'POST',
+            async:true,
+            data:{
+            	'usr':$("input[name='usr']").val(),
+            	'psd':$("input[name='psd']").val()
+            },
+            success:function(data){
+            	//var data=eval("("+data+")");
+            	//alert(data);
+              if(data=="000"){
+              	alert('32');
+              }
+              else{
+                   $("#list1").css('display','none');
+                   $("#list2").css('display','block');
+                   $("#list2 li").eq(1).html(data);
+              }         
+            }
+	 	})
+	 })
+	 		
+ })
+	 	
+</script>
+<script>
+	new WOW().init();
+</script>
+    <script type="text/javascript">
+	  
+		</script>
+  </head>
+ <body>
+  <div id="loading">
+      <div class="round">
+        <div class="dot"></div>
+      </div>
+      <div class="text">
+        <p>loading</p>
+      </div>
+    </div>
+  <div id="full1">
+	<div class="body1">
+	   	   <div class="login">
+	   	   	   <span class="le">账户登录</span>
+	   	   	   <span class="ri"><a href="javascript:;" id="CL1"><img src="img/X.png" alt="退出"></a></span>
+	   	   </div>
+	   	   <div class="Form">
+		   	  <form action="#" name="表单" method="post" onsubmit="return IsNull()" >
+		   	  	<div class="UserName">
+				<label>
+				   	<input type="text" name="usr" class="Input" placeholder="手机号/会员名/邮箱" required="required"/>
+				</label>
+			   </div>
+				<div class="passwd">
+					<label>
+					 <input type="password" name="psd" class="Input" placeholder="密码"
+					  required="required"/>
+					</label>
+				</div>
+				<div class="Rem">
+					
+						<span class="le"><label><input type="checkbox" name="member" />记住密码</label></span>				
+					<span class="ri"><a href="unREMpasswd.html">忘记密码</a></span>
+				</div>
+				<input type="button" name="Submit" id="Submit" value="登录" class="OnL"/>
+			</form>
+	   	   </div>
+
+	   </div>
+	 </div>
+
+	<div id="topdiv">
+		<div id="top-menu">
+			<ul>
+				<li><a href="index.html" class="active">主页</a></li>
+				<li><a href="introduce1.html" >实验室介绍</a></li>				
+				<li><a href="action-online.html">研究成果</a>
+					<ul>
+						<li><a href="javascript:;">学术论文</a></li>
+						<li><a href="javascript:;">在线演示</a></li>
+					</ul>
+				</li>
+				<li><a href="resource.html">资源共享</a></li>
+				<li><a href="discuss.html">交流专区</a></li>
+				<li><a href="join.html">加入我们</a></li>
+			</ul>
+		</div>
+		<div class="search">
+			<form>
+				<input type="text" value="Search.." onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}" >
+				<input type="submit" value="">
+			</form>
+		</div>
+		<div class="loading">
+			<ul style="display: block;" id="list1">
+				<li><a href="register.html" id="load2">注册</a></li>
+				<li><a href="javascript:load();" id="load1">登录</a></li>
+			</ul>
+			<ul style="display:none;" id="list2">
+				<li><a href="javascript:Return()">退出</a></li>
+				<li style="color: white;">&nbsp; &nbsp;user</li>
+			</ul>
+		</div>
+	</div>
+	<div class="conton">
+		<div class="img-port wow bounceIn animated" data-wow-delay="0.5s" style="visibility: visible; -webkit-animation-delay: 0.5s;">
+			<a href="#"><img src="img/logo.png" alt="logo图标"/></a>
+		</div>
+		<div class="top-button hvr-shutter-in-vertical">
+		<a href="join.html"><h2>Join Us</h2></a>
+		</div>
+	</div>
+	<!-- content -->
+	<div class="content wow fadeIn animated" data-wow-delay="0.5s" style="visibility: visible; -webkit-animation-delay: 0.5s;">
+		<div class="about-wen">
+			<div class="cort-pert">
+				<h2>实验室研究内容</h2>
+			</div>
+			<div class="imformation1 wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+				<span><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数据挖掘一般是指从大量的数据中通过算法搜索隐藏于其中信息的过程。数据挖掘通常与计算机科学有关，并通过统计、在线分析处理、情报检索、机器学习、专家系统（依靠过去的经验法则）和模式识别等诸多方法来实现上述目标。从数据本身来考虑，通常数据挖掘需要有数据清理、数据变换、数据挖掘实施过程、模式评估和知识表示等8个步骤。</p></span>
+			</div>
+			<div class="imformation1 wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数据挖掘利用了来自如下一些领域的思想：(1) 来自统计学的抽样、估计和假设检验，(2)人工智能、模式识别和机器学习的搜索算法、建模技术和学习理论。数据挖掘也迅速地接纳了来自其他领域的思想，这些领域包括最优化、进化计算、信息论、信号处理、可视化和信息检索。一些其他领域也起到重要的支撑作用。特别地，需要数据库系统提供有效的存储、索引和查询处理支持。源于高性能（并行）计算的技术在处理海量数据集方面常常是重要的。分布式技术也能帮助处理海量数据，并且当数据不能集中到一起处理时更是至关重要。</p>
+			</div>
+		</div>
+		<!-- 公告公布处 （最少需要公布5条消息）-->
+		<div class="about-gong">
+			<div class="cort-pert">
+				<h2>最新公告</h2>
+			</div>
+			<div id="scrollmeg">
+				<div id="room">
+					<div id="div1">
+						<!-- <div class="imfor-port">
+							
+						</div>
+						 <div class="imfor-port"> -->
+							<!-- <p><a href="">2唐朝的衰败，归结于她的美</a><span class="date">&nbsp;&nbsp;[07-10]</span></p> -->
+						<!-- </div>
+						<div class="imfor-port"> -->
+							<!-- <p><a href="">3关于认真学习贯彻习近平总书记在庆祝中国共产党成立95周年大会上重要讲话精神的通知</a><span class="date">&nbsp;&nbsp;&nbsp;&nbsp;[07-09]</span>
+							</p> -->
+						<!-- </div>
+						<div class="imfor-port"> -->
+							<!-- <p><a href="news.html">4学校开展依法治校 积极推进“一章八制”专项工作	</a><span class="date">&nbsp;&nbsp;[07-08]</span></p> -->
+						<!-- </div>
+						<div class="imfor-port"> -->
+						<!-- <p><a href="">
+                         5.家喻户晓的杨玉环，她貌美如花，回眸一笑百媚生，唐朝的衰败，归结于她的美。</a><span class="date">&nbsp;&nbsp;[07-07]</span></p> -->
+						<!-- </div> 
+						<div class="imfor-port"> -->
+							<!-- <p><a href="">6.君王至暮年，头脑浑浑噩噩，行事愚钝，于是便将原因归于女人。。</a>
+							<span class="date">&nbsp;&nbsp;[07-06]</span></p> -->
+						<!-- </div>  -->
+					</div>
+					<div id="div2"></div>
+				</div>
+			</div>
+		</div>
+	</div>                         
+		<!--footer-->
+	<div class="container">
+            <div class="footer-top wow bounceInLeft animated animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                    <ul>
+                        <li><a href="#"><img src="img/icon1.png" alt=""/></a></li>
+                        <li><a href="#"><img src="img/icon2.png" alt=""/></a></li>
+                        <li><a href="#"><img src="img/icon3.png" alt=""/></a></li>
+                        <li><a href="#"><img src="img/icon4.png" alt=""/></a></li>
+                    </ul>
+            </div>
+                <div class="bottom-menu wow bounceInLeft animated animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                    <ul>
+		                <li><a href="index.html">主页</a>&nbsp;&nbsp;</li>
+					    <li><a href="introduce1.html">实验室介绍</a>&nbsp;&nbsp;</li>
+					  	<li><a href="action-online.html">研究成果</a>&nbsp;&nbsp;</li>
+						<li><a href="resource.html">资源共享</a>&nbsp;&nbsp;</li>
+					   	<li><a href="discuss.html">交流专区</a>&nbsp;&nbsp;</li>
+					   	<li><a href="join.html">加入我们</a>&nbsp;&nbsp;</li>
+                    </ul>
+                </div>
+           <div class="buttom-wen wow fadeInDown animated animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+         		<p>Copyright © 2016 imooc.com All Rights Reserved | 京ICP备 13046642号-2</p>
+     		</div>
+	</div>
+   <script>
+      $(window).on('load', function() {
+        $('#loading').fadeOut(1000);
+      });
+    </script>
+</body>
+</html>

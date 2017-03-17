@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Register</title>
+       <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+       <link href="css/input.css" rel="stylesheet" type="text/css">
+       <script type="text/javascript" src="js/check.js"></script>
+       <script>
+           window.onload=function(){
+         document.getElementById('form1').onsubmit=function(){
+        var m=writeMember();
+        var n=checkpwd();
+         if(m==false || n==false)
+         return false;
+   }
+  
+ }
+       </script>
+	</head>
+	<body>
+		<div class="icon">
+		<p>文本挖掘</p>
+	    </div>
+    <!--  <div id="full2"> -->
+	   <div class="body2">
+	   	   <div class="login">
+	   	   	  <span class="le">用户注册</span><span class="ri">已有账号，<a href="onload.html">点击登录</a></span>
+	   	   </div>
+	   	   <div class="Rback">
+	   	     <p style="float:right;"><a href="index.html">返回首页</a></p>
+	   	   </div>
+	   	   <div class="Form2">
+		   	  <form action="#" name="表单" method="post" id="form1">
+		   	  	<div class="UserName">
+				<label for="">
+				   	<input type="text" name="usr" class="Input Mtop" placeholder="请输入您的昵称"
+				   	 required="required" />
+				</label>
+			   </div>
+			   <div class="mail">
+				<label for="">
+				   	<input type="text" name="mail" id="email" class="Input" placeholder="请输入邮箱" 
+				   	required="required"/>
+				</label>
+			   </div>
+				<div class="passwd">
+					<label for="">
+						<input type="password" name="" id="pwd1" class="Input" placeholder="请输入您的密码"
+						required="required"/>
+					</label>
+				</div>
+				<div class="passwd">
+					<label for="">
+						<input type="password" name="" id="pwd2" class="Input" placeholder="请再次确认您的密码" required="required"/>
+					</label>
+				</div>
+				<input type="submit" name="Submit"  value="注册" class="R-OnL"/>
+			</form>
+	   	   </div>
+	   </div>
+	 <!--  </div> -->
+	</body>
+</html>
