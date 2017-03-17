@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+      <script type="text/javascript">
+   window.onload=function()
+  {
+
+
+	  function check_uppercase(obj)
+  	 {
+  		 if(/^[A-Z]+$/.test(obj))
+  		 {
+  			return true;
+  		 }
+  	 }
+    function upperIndex(str)
+    {
+  		 var arr=[];
+  		 var len=str.length;
+
+  		 for(var i=0;i<len;i++)
+  		 {
+               if(check_uppercase(str[i]))
+               {
+               	 arr.push(i);
+               }
+  		 }
+  		 return arr;
+  	}
+
+  function fn(str)
+  {
+    var arr=str.split('');
+    var arrIndex=upperIndex(arr);
+    console.log(arrIndex);
+ 
+    for(var i=1;i<arrIndex.length;i++)
+    { 
+        arr.splice(arrIndex[i],0,"_");
+        arrIndex=upperIndex(arr);  //第二次重新获取大写字母的索引值
+        console.log(arrIndex);
+        
+       // console.log(arr);     
+    }
+    var str1=arr.join("").toLowerCase(); 
+    console.log(str1);
+       
+  }
+
+  fn("HelloWorldHelloLo");
+}
+  
+
+  </script>
+</body>
+</html>
