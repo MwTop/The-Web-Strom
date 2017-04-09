@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SET using</title>
+</head>
+<body>
+	<script>
+          function Set(){  //集合
+            this.dataStore=[];
+            this.add=add;
+            this.remove = remove;
+            this.size = size;
+            this.union = union;  //求并集
+            this.intersect = intersect;  //求交集
+            this.subset = subset;  //判子集
+            this.complement = complement; //求补集
+                  this.show = show;
+                  this.contains = contains;  //某个元素是否属于该集合
+          }
+        
+         function add(data){
+          if(this.dataStore.indexOf(data) < 0){
+                   this.dataStore.push(data);
+                   return true;
+          }
+          else {
+            return false;
+          }
+        }
+        
+        function remove(data) {
+        	var pos = this.dataStore.indexOf(data);
+        	if(pos > -1){
+        		this.dataStore.splice(pos,1);
+        		return true;
+        	}
+        	else {
+                return false;
+        	}
+        }
+
+        function show(){
+        	return this.dataStore;
+        }
+
+        function size(){
+        	return this.dataStore.length;
+        }
+
+        function contains(data){  //判断元素是否属于该集合
+            if(this.dataStore.indexOf(data) < 0){
+            	return false;
+            }
+            else 
+              return true;
+        }
+          //求集合的并集操作
+        function union(set){ 
+            var tempSet = new Set();
+            for (var i = 0,l = this.dataStore.length; i < l; i++) {
+            	  tempSet.add(this.dataStore[i]);
+            }
+            
+            for (var i = 0,l = set.dataStore.length; i < l; i++) {
+            	if(!tempSet.contains(set.dataStore[i])){
+            		tempSet.dataStore.push(set.dataStore[i]);
+            		
+            	}
+            }
+            return tempSet;
+        }
+           //求交集
+        function intersect(set){
+           var tempSet = new Set();
+           for (var i = 0; i < this.dataStore.length; i++) {
+           	  if(set.contains(this.dataStore[i])){
+           	  	tempSet.dataStore.push(this.dataStore[i]);
+           	  }
+           }
+            return tempSet;
+        }
+          //求子集
+        function subset(set){
+            if(this.size() > set.size()){
+            	return false;
+            }
+            else {
+            	this.dataStore.forEach(function(member) {
+            		if(!set.contains(member)) {
+            			return false;
+            		}
+            	})
+            }
+            return true;
+        }
+         //求补集
+        function  complement(set){         
+            for (var i = 0; i < this.dataStore.length; i++) {
+            	if(set.contains(this.dataStore[i])){            		
+            		set.remove(this.dataStore[i]);
+            	}
+            }
+            return set.dataStore;
+        }
+
+        var objSet = new Set();
+        objSet.add("head");
+        objSet.add("num1");
+         console.log(objSet.show());
+         objSet.remove('head');
+         console.log(objSet.show());
+         var dmp = new Set();
+
+         for(var i = 0; i < 4; i++){
+         	dmp.add(i);
+         }
+
+         var Ut = new Set();
+         var Jt = new Set();
+         Ut = objSet.union(dmp);
+         console.log(Ut.show());
+         console.log(dmp.show());
+         Jt = Ut.intersect(dmp);
+         Jt.remove(0);
+         console.log(Jt.show());
+         console.log(Jt.subset(Ut));
+         console.log(Jt.complement(Ut));
+	</script>
+</body>
+</html>
