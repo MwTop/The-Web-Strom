@@ -1,0 +1,71 @@
+<html>
+     <head>
+        <meta charset="utf-8">
+       <title>选项卡头标签</title>
+       <style type="text/css">
+          input{
+          	background: white;
+          	width: 80px;
+          	height: 30px;
+            margin: 0 5px;
+          }
+          .active{
+          	background: green;
+          }
+          div{
+          	width: 300px;
+          	height: 150px;
+          	background: #ccc;
+          	font-size: 13px;
+          	text-align: center;
+          	display: none;
+            margin:10px auto; 
+          }
+       </style>
+      <script type="text/javascript">
+      window.onload=function ()
+      {          
+       // var many=document.getElementsByTagName("input");
+           var aDiv=document.getElementsByTagName("div");
+      	 var abtn=document.getElementsByTagName("input");
+           for (var i = 0; i < abtn.length; i++)
+            {
+              
+               abtn[i].index=i;  //按钮添加索引值
+              abtn[i].onclick=function ()
+             {   
+               for (var i = 0; i < abtn.length; i++) {
+                 
+                 abtn[i].className='';              // 让所有的按钮的className都为空
+                 aDiv[i].style.display='none';
+               };
+               aDiv[this.index].style.display='block';
+               this.className='active';      // 设置当前元素标签中的内容样式为active                
+            }
+           };
+      	 }   
+      </script>
+    </head>
+    <body align="center">
+     <!-- <span>
+    	<p id="btn">全选</p>
+    	<input type="checkbox" /><br />
+    	<input type="checkbox" /><br />
+    	<input type="checkbox" /><br />
+    	<input type="checkbox" /><br />
+    	<input type="checkbox" /><br />
+    	<input type="checkbox" /><br />
+    	<input type="checkbox" /><br />
+    	<input type="checkbox" /><br /> 
+      </span>-->
+
+    	<input type="button" value="1" class="active">
+        <input type="button" value="2">
+        <input type="button" value="3"> 
+
+        <div style="display:block;">这是第一个按钮中的所有文本内容</div>
+        <div>第二个按钮中的所有文本内容</div>
+        <div>这是第三个按钮中的所有文本内容</div>
+    
+    </body>
+ </html>
